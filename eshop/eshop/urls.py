@@ -15,16 +15,34 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from app import views
+from app.views import (
+    remove_from_cart,
+    reduce_quantity_item,
+    add_to_cart,
+    ProductView,
+    HomeView,
+    OrderSummaryView,
+    index,
+    category,
+    cart,
+    checkout,
+    account,
+    product
+
+)
+
+app_name = 'app'
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.index, name='index'),
-    path('category/', views.category, name='category'),
-    path('product/', views.product, name='product'),
-    path('cart/', views.cart, name='cart'),
-    path('checkout/', views.checkout, name='checkout'),
-    path('account/', views.account, name='account'),
+    path('', index, name='index'),
+    path('category/', category, name='category'),
+    path('home/', HomeView.as_view(), name='home'),
+    path('products/<slug>/', ProductView.as_view(), name='products'),
+    path('product/', product, name='product'),
+    path('cart/', cart, name='cart'),
+    path('checkout/', checkout, name='checkout'),
+    path('account/', account, name='account'),
     
 
 
