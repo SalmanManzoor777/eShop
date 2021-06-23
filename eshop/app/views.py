@@ -116,7 +116,7 @@ class AddToCartView(EcomMixin, TemplateView):
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         # get product id from requested url
-        product_id = self.kwargs['slug']
+        product_id = self.kwargs['pro_id']
         print(product_id)
         # get product
         product_obj = Product.objects.get(id=product_id)
