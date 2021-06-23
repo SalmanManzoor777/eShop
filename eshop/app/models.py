@@ -1,85 +1,112 @@
 from django.conf import settings
 from django.db import models
-from django.shortcuts import reverse
+from django.contrib.auth.models import User
 # Create your models here.
 
-CATEGORY = (
-    ('S', 'Shirt'),
-    ('SP', 'Sport Wear'),
-    ('OW', 'Out Wear')
-)
 
-LABEL = (
-    ('N', 'New'),
-    ('BS', 'Best Seller')
-)
-
-class Item(models.Model):
-    item_name = models.CharField(max_length=100)
-    price = models.FloatField()
-    discount_price = models.FloatField(blank=True, null=True)
-    category = models.CharField(choices=CATEGORY, max_length=2)
-    label = models.CharField(choices=LABEL, max_length=2)
-    slug = models.SlugField()
-    description = models.TextField()
-
-    def __str__(self):
-        return self.item_name
-
-    def get_absolute_url(self):
-        return reverse("app:products", kwargs={
-            "slug" : self.slug
-        
-        })
-
-    def get_add_to_cart_url(self):
-        return reverse("core:add-to-cart", kwargs={
-            "pk" : self.pk
-        })
-
-    def get_remove_from_cart_url(self):
-        return reverse("core:remove-from-cart", kwargs={
-            "pk" : self.pk
-        })
-
-class OrderItem(models.Model):
-    user = models.ForeignKey(settings.AUTH_USER_MODEL,
-                             on_delete=models.CASCADE)
-    ordered = models.BooleanField(default=False)
-    item = models.ForeignKey(Item, on_delete=models.CASCADE)
-    quantity = models.IntegerField(default=1)
-
-    def __str__(self):
-        return f"{self.quantity} of {self.item.item_name}"
-
-    def get_total_item_price(self):
-        return self.quantity * self.item.price
-
-    def get_discount_item_price(self):
-        return self.quantity * self.item.discount_price
-
-    def get_amount_saved(self):
-        return self.get_total_item_price() - self.get_discount_item_price()
-
-    def get_final_price(self):
-        if self.item.discount_price:
-            return self.get_discount_item_price()
-        return self.get_total_item_price()
-    
-    
-
-class Order(models.Model):
-    user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
-    items = models.ManyToManyField(OrderItem)
-    start_date = models.DateTimeField(auto_now_add=True)
-    ordered_date = models.DateTimeField()
-    ordered = models.BooleanField(default=False)
+class Admin(models.Model):
+    user = models.OneToOneField(User, on_delete=models.CASCADE)
+    full_name = models.CharField(max_length=50)
+    image = models.ImageField(upload_to="admins")
+    mobile = models.CharField(max_length=20)
 
     def __str__(self):
         return self.user.username
-    
-    def get_total_price(self):
-        total = 0
-        for order_item in self.items.all():
-            total += order_item.get_final_price()
-        return total
+
+
+class Customer(models.Model):
+    user = models.OneToOneField(User, on_delete=models.CASCADE)
+    full_name = models.CharField(max_length=200)
+    address = models.CharField(max_length=200, null=True, blank=True)
+    joined_on = models.DateTimeField(auto_now_add=True)
+
+    def __str__(self):
+        return self.full_name
+
+
+class Category(models.Model):
+    title = models.CharField(max_length=200)
+    slug = models.SlugField(unique=True)
+
+    def __str__(self):
+        return self.title
+
+
+class Product(models.Model):
+    title = models.CharField(max_length=200)
+    slug = models.SlugField(unique=True)
+    category = models.ForeignKey(Category, on_delete=models.CASCADE)
+    image = models.ImageField(upload_to="products")
+    marked_price = models.PositiveIntegerField()
+    selling_price = models.PositiveIntegerField()
+    description = models.TextField()
+    warranty = models.CharField(max_length=300, null=True, blank=True)
+    return_policy = models.CharField(max_length=300, null=True, blank=True)
+    view_count = models.PositiveIntegerField(default=0)
+
+    def __str__(self):
+        return self.title
+
+
+class ProductImage(models.Model):
+    product = models.ForeignKey(Product, on_delete=models.CASCADE)
+    image = models.ImageField(upload_to="products/images/")
+
+    def __str__(self):
+        return self.product.title
+
+
+class Cart(models.Model):
+    customer = models.ForeignKey(
+        Customer, on_delete=models.SET_NULL, null=True, blank=True)
+    total = models.PositiveIntegerField(default=0)
+    created_at = models.DateTimeField(auto_now_add=True)
+
+    def __str__(self):
+        return "Cart: " + str(self.id)
+
+
+class CartProduct(models.Model):
+    cart = models.ForeignKey(Cart, on_delete=models.CASCADE)
+    product = models.ForeignKey(Product, on_delete=models.CASCADE)
+    rate = models.PositiveIntegerField()
+    quantity = models.PositiveIntegerField()
+    subtotal = models.PositiveIntegerField()
+
+    def __str__(self):
+        return "Cart: " + str(self.cart.id) + " CartProduct: " + str(self.id)
+
+
+ORDER_STATUS = (
+    ("Order Received", "Order Received"),
+    ("Order Processing", "Order Processing"),
+    ("On the way", "On the way"),
+    ("Order Completed", "Order Completed"),
+    ("Order Canceled", "Order Canceled"),
+)
+
+METHOD = (
+    ("Cash On Delivery", "Cash On Delivery"),
+    ("Khalti", "Khalti"),
+    ("Esewa", "Esewa"),
+)
+
+
+class Order(models.Model):
+    cart = models.OneToOneField(Cart, on_delete=models.CASCADE)
+    ordered_by = models.CharField(max_length=200)
+    shipping_address = models.CharField(max_length=200)
+    mobile = models.CharField(max_length=10)
+    email = models.EmailField(null=True, blank=True)
+    subtotal = models.PositiveIntegerField()
+    discount = models.PositiveIntegerField()
+    total = models.PositiveIntegerField()
+    order_status = models.CharField(max_length=50, choices=ORDER_STATUS)
+    created_at = models.DateTimeField(auto_now_add=True)
+    payment_method = models.CharField(
+        max_length=20, choices=METHOD, default="Cash On Delivery")
+    payment_completed = models.BooleanField(
+        default=False, null=True, blank=True)
+
+    def __str__(self):
+        return "Order: " + str(self.id)

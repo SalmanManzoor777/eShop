@@ -156,7 +156,7 @@
 					</div>
 					<div class="hdr-nav hide-mobile nav-holder justify-content-center px-4">
 <ul class="mmenu mmenu-js">
-	<li class="mmenu-item--simple"><a href="{% url "index" %}" class="active">Home</a>
+	<li class="mmenu-item--simple"><a href="{% url "app:index" %}" class="active">Home</a>
 		<div class="mmenu-submenu d-flex">
 			
 
@@ -165,9 +165,9 @@
 	<li class="mmenu-item--simple"><a href="#">Pages</a>
 		<div class="mmenu-submenu">
 			<ul class="submenu-list">
-	<li><a href="{% url "product" %}">Product page</a>
+	<li><a href="{% url "app:product" %}">Product page</a>
 		<ul>
-			<li><a href="{% url "product" %}">Product page variant 1<span class="menu-label menu-label--color3">Popular</span></a></li>
+			<li><a href="{% url "app:product" %}">Product page variant 1<span class="menu-label menu-label--color3">Popular</span></a></li>
 			<li><a href="product-2.html">Product page variant 2</a></li>
 			<li><a href="product-3.html">Product page variant 3</a></li>
 			<li><a href="product-4.html">Product page variant 4</a></li>
@@ -176,12 +176,12 @@
 			<li><a href="product-7.html">Product page variant 7</a></li>
 		</ul>
 	</li>
-	<li><a href="{% url "category" %}">Category page</a>
+	<li><a href="{% url "app:category" %}">Category page</a>
 		
 	</li>
-	<li><a href="{% url "cart" %}">Cart & Checkout</a>
+	<li><a href="{% url "app:cart" %}">Cart & Checkout</a>
 		<ul>
-			<li><a href="{% url "cart" %}">Cart Page</a></li>
+			<li><a href="{% url "app:cart" %}">Cart Page</a></li>
 		</ul>
 	</li>
 	<li><a href="account-create.html">Account</a>
@@ -205,8 +205,8 @@
 </ul>
 		</div>
 	</li>
-	<li><a href="{% url "category" %}">Accessories<span class="menu-label">SALE</span></a></li>
-	<li class="mmenu-item--mega"><a href="{% url "category" %}">Men</a>
+	<li><a href="{% url "app:category" %}">Accessories<span class="menu-label">SALE</span></a></li>
+	<li class="mmenu-item--mega"><a href="{% url "app:category" %}">Men</a>
 		<div class="mmenu-submenu mmenu-submenu--has-bottom">
 			<div class="mmenu-submenu-inside">
 				<div class="container">
@@ -214,64 +214,64 @@
 						<div class="mmenu-bnr-wrap">
 							<a href="#" class="image-hover-scale"><img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-srcset="/static/images/menu/mmenu-bnr-01.webp" class="lazyload fade-up" alt=""></a>
 						</div>
-						<h3 class="submenu-title"><a href="{% url "category" %}">Pre-Collection<br>Spring-Summer 2021</a></h3>
+						<h3 class="submenu-title"><a href="{% url "app:category" %}">Pre-Collection<br>Spring-Summer 2021</a></h3>
 					</div>
 					<div class="mmenu-cols column-4">
 						<div class="mmenu-col">
-							<h3 class="submenu-title"><a href="{% url "category" %}">Collections</a></h3>
+							<h3 class="submenu-title"><a href="{% url "app:category" %}">Collections</a></h3>
 							<ul class="submenu-list">
-								<li><a href="{% url "category" %}">Martins d'Art 2020/21<span class="submenu-link-txt">Available in boutiques from June 2019</span></a></li>
-								<li><a href="{% url "category" %}">Spring-Summer 2021<span class="submenu-link-txt">Available in boutiques from March 2019</span></a></li>
-								<li><a href="{% url "category" %}">Spring-Summer 2021 Pre-Collection<span class="submenu-link-txt">In boutiques</span></a></li>
-								<li><a href="{% url "category" %}">Cruise 2020/21<span class="submenu-link-txt">In boutiques</span></a></li>
-								<li><a href="{% url "category" %}">Fall-Winter 2020/21</a></li>
+								<li><a href="{% url "app:category" %}">Martins d'Art 2020/21<span class="submenu-link-txt">Available in boutiques from June 2019</span></a></li>
+								<li><a href="{% url "app:category" %}">Spring-Summer 2021<span class="submenu-link-txt">Available in boutiques from March 2019</span></a></li>
+								<li><a href="{% url "app:category" %}">Spring-Summer 2021 Pre-Collection<span class="submenu-link-txt">In boutiques</span></a></li>
+								<li><a href="{% url "app:category" %}">Cruise 2020/21<span class="submenu-link-txt">In boutiques</span></a></li>
+								<li><a href="{% url "app:category" %}">Fall-Winter 2020/21</a></li>
 							</ul>
 						</div>
 						<div class="mmenu-col">
-							<h3 class="submenu-title"><a href="{% url "category" %}">Ready-to-wear</a></h3>
+							<h3 class="submenu-title"><a href="{% url "app:category" %}">Ready-to-wear</a></h3>
 							<ul class="submenu-list">
-								<li><a href="{% url "category" %}" class="active">Jackets</a>
+								<li><a href="{% url "app:category" %}" class="active">Jackets</a>
 									<ul class="sub-level">
-										<li><a href="{% url "category" %}">Bomber Jackets</a></li>
-										<li><a href="{% url "category" %}">Biker Jacket</a></li>
-										<li><a href="{% url "category" %}">Trucker Jacket</a></li>
-										<li><a href="{% url "category" %}">Denim Jackets</a></li>
-										<li><a href="{% url "category" %}">Blouson Jacket<span class="menu-label">SALE</span></a></li>
-										<li><a href="{% url "category" %}">Overcoat</a></li>
-										<li><a href="{% url "category" %}">Trench Coat</a></li>
+										<li><a href="{% url "app:category" %}">Bomber Jackets</a></li>
+										<li><a href="{% url "app:category" %}">Biker Jacket</a></li>
+										<li><a href="{% url "app:category" %}">Trucker Jacket</a></li>
+										<li><a href="{% url "app:category" %}">Denim Jackets</a></li>
+										<li><a href="{% url "app:category" %}">Blouson Jacket<span class="menu-label">SALE</span></a></li>
+										<li><a href="{% url "app:category" %}">Overcoat</a></li>
+										<li><a href="{% url "app:category" %}">Trench Coat</a></li>
 									</ul>
 								</li>
-								<li><a href="{% url "category" %}">Dresses<span class="menu-label menu-label--color3">SALE</span></a></li>
-								<li><a href="{% url "category" %}">Blouses & Tops</a></li>
-								<li><a href="{% url "category" %}">Cardigans & Pullovers</a></li>
-								<li><a href="{% url "category" %}">Skirts</a></li>
-								<li><a href="{% url "category" %}">Pants & Shorts</a></li>
-								<li><a href="{% url "category" %}">Outerwear</a></li>
-								<li><a href="{% url "category" %}">Swimwear</a></li>
+								<li><a href="{% url "app:category" %}">Dresses<span class="menu-label menu-label--color3">SALE</span></a></li>
+								<li><a href="{% url "app:category" %}">Blouses & Tops</a></li>
+								<li><a href="{% url "app:category" %}">Cardigans & Pullovers</a></li>
+								<li><a href="{% url "app:category" %}">Skirts</a></li>
+								<li><a href="{% url "app:category" %}">Pants & Shorts</a></li>
+								<li><a href="{% url "app:category" %}">Outerwear</a></li>
+								<li><a href="{% url "app:category" %}">Swimwear</a></li>
 							</ul>
 						</div>
 						<div class="mmenu-col">
-							<h3 class="submenu-title"><a href="{% url "category" %}">Accessories</a></h3>
+							<h3 class="submenu-title"><a href="{% url "app:category" %}">Accessories</a></h3>
 							<ul class="submenu-list">
-								<li><a href="{% url "category" %}">Jackets</a></li>
-								<li><a href="{% url "category" %}">Dresses</a></li>
-								<li><a href="{% url "category" %}">Blouses & Tops</a></li>
-								<li><a href="{% url "category" %}">Cardigans & Pullovers</a></li>
-								<li><a href="{% url "category" %}">Skirts<span class="menu-label">SALE</span></a></li>
-								<li><a href="{% url "category" %}">Pants & Shorts</a></li>
-								<li><a href="{% url "category" %}">Outerwear</a></li>
+								<li><a href="{% url "app:category" %}">Jackets</a></li>
+								<li><a href="{% url "app:category" %}">Dresses</a></li>
+								<li><a href="{% url "app:category" %}">Blouses & Tops</a></li>
+								<li><a href="{% url "app:category" %}">Cardigans & Pullovers</a></li>
+								<li><a href="{% url "app:category" %}">Skirts<span class="menu-label">SALE</span></a></li>
+								<li><a href="{% url "app:category" %}">Pants & Shorts</a></li>
+								<li><a href="{% url "app:category" %}">Outerwear</a></li>
 							</ul>
 						</div>
 						<div class="mmenu-col">
-							<h3 class="submenu-title"><a href="{% url "category" %}">Brands</a></h3>
+							<h3 class="submenu-title"><a href="{% url "app:category" %}">Brands</a></h3>
 							<ul class="submenu-list">
-								<li><a href="{% url "category" %}">Jackets</a></li>
-								<li><a href="{% url "category" %}">Dresses</a></li>
-								<li><a href="{% url "category" %}">Blouses & Tops</a></li>
-								<li><a href="{% url "category" %}">Cardigans & Pullovers</a></li>
-								<li><a href="{% url "category" %}">Skirts<span class="menu-label menu-label--color1">SALE</span></a></li>
-								<li><a href="{% url "category" %}">Pants & Shorts</a></li>
-								<li><a href="{% url "category" %}">Outerwear</a></li>
+								<li><a href="{% url "app:category" %}">Jackets</a></li>
+								<li><a href="{% url "app:category" %}">Dresses</a></li>
+								<li><a href="{% url "app:category" %}">Blouses & Tops</a></li>
+								<li><a href="{% url "app:category" %}">Cardigans & Pullovers</a></li>
+								<li><a href="{% url "app:category" %}">Skirts<span class="menu-label menu-label--color1">SALE</span></a></li>
+								<li><a href="{% url "app:category" %}">Pants & Shorts</a></li>
+								<li><a href="{% url "app:category" %}">Outerwear</a></li>
 							</ul>
 						</div>
 						<div class="mmenu-bottom justify-content-center">
@@ -282,7 +282,7 @@
 			</div>
 		</div>
 	</li>
-	<li class="mmenu-item--mega"><a href="{% url "category" %}">Women</a>
+	<li class="mmenu-item--mega"><a href="{% url "app:category" %}">Women</a>
 		<div class="mmenu-submenu mmenu-submenu--has-bottom">
 			<div class="mmenu-submenu-inside">
 				<div class="container">
@@ -290,98 +290,98 @@
 						<div class="mmenu-bnr-wrap">
 							<a href="#" class="image-hover-scale"><img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-srcset="/static/images/menu/mmenu-bnr-02.webp" class="lazyload fade-up" alt=""></a>
 						</div>
-						<h3 class="submenu-title"><a href="{% url "category" %}">Pre-Collection<br>Spring-Summer 2021</a></h3>
+						<h3 class="submenu-title"><a href="{% url "app:category" %}">Pre-Collection<br>Spring-Summer 2021</a></h3>
 					</div>
 					<div class="mmenu-cols column-4">
 						<div class="mmenu-col">
-							<h3 class="submenu-title"><a href="{% url "category" %}">Collections</a></h3>
+							<h3 class="submenu-title"><a href="{% url "app:category" %}">Collections</a></h3>
 							<ul class="submenu-list">
-								<li><a href="{% url "category" %}">Martins d'Art 2020/21<span class="submenu-link-txt">Available in boutiques from June 2019</span></a></li>
-								<li><a href="{% url "category" %}">Spring-Summer 2021<span class="submenu-link-txt">Available in boutiques from March 2019</span></a></li>
-								<li><a href="{% url "category" %}">Spring-Summer 2021 Pre-Collection<span class="submenu-link-txt">In boutiques</span></a></li>
-								<li><a href="{% url "category" %}">Cruise 2020/21<span class="submenu-link-txt">In boutiques</span></a></li>
-								<li><a href="{% url "category" %}">Fall-Winter 2020/21</a></li>
+								<li><a href="{% url "app:category" %}">Martins d'Art 2020/21<span class="submenu-link-txt">Available in boutiques from June 2019</span></a></li>
+								<li><a href="{% url "app:category" %}">Spring-Summer 2021<span class="submenu-link-txt">Available in boutiques from March 2019</span></a></li>
+								<li><a href="{% url "app:category" %}">Spring-Summer 2021 Pre-Collection<span class="submenu-link-txt">In boutiques</span></a></li>
+								<li><a href="{% url "app:category" %}">Cruise 2020/21<span class="submenu-link-txt">In boutiques</span></a></li>
+								<li><a href="{% url "app:category" %}">Fall-Winter 2020/21</a></li>
 							</ul>
 						</div>
 						<div class="mmenu-col">
-							<h3 class="submenu-title"><a href="{% url "category" %}">Ready-to-wear</a></h3>
+							<h3 class="submenu-title"><a href="{% url "app:category" %}">Ready-to-wear</a></h3>
 							<ul class="submenu-list">
-								<li><a href="{% url "category" %}">Jackets</a></li>
-								<li><a href="{% url "category" %}">Dresses<span class="menu-label menu-label--color3">SALE</span></a></li>
-								<li><a href="{% url "category" %}">Blouses & Tops</a>
+								<li><a href="{% url "app:category" %}">Jackets</a></li>
+								<li><a href="{% url "app:category" %}">Dresses<span class="menu-label menu-label--color3">SALE</span></a></li>
+								<li><a href="{% url "app:category" %}">Blouses & Tops</a>
 									<ul>
-										<li><a href="{% url "category" %}">Jackets</a></li>
-										<li><a href="{% url "category" %}">Dresses<span class="menu-label menu-label--color3">SALE</span></a></li>
-										<li><a href="{% url "category" %}">Blouses & Tops</a>
+										<li><a href="{% url "app:category" %}">Jackets</a></li>
+										<li><a href="{% url "app:category" %}">Dresses<span class="menu-label menu-label--color3">SALE</span></a></li>
+										<li><a href="{% url "app:category" %}">Blouses & Tops</a>
 											<ul>
-												<li><a href="{% url "category" %}">Jackets</a></li>
-												<li><a href="{% url "category" %}">Dresses<span class="menu-label menu-label--color3">SALE</span></a>
+												<li><a href="{% url "app:category" %}">Jackets</a></li>
+												<li><a href="{% url "app:category" %}">Dresses<span class="menu-label menu-label--color3">SALE</span></a>
 													<ul>
-														<li><a href="{% url "category" %}">Jackets</a></li>
-														<li><a href="{% url "category" %}">Dresses<span class="menu-label menu-label--color3">SALE</span></a>
+														<li><a href="{% url "app:category" %}">Jackets</a></li>
+														<li><a href="{% url "app:category" %}">Dresses<span class="menu-label menu-label--color3">SALE</span></a>
 															<ul>
-																<li><a href="{% url "category" %}">Jackets</a></li>
-																<li><a href="{% url "category" %}">Dresses<span class="menu-label menu-label--color3">SALE</span></a></li>
-																<li><a href="{% url "category" %}">Blouses & Tops</a></li>
-																<li><a href="{% url "category" %}">Cardigans & Pullovers</a></li>
-																<li><a href="{% url "category" %}">Skirts</a></li>
-																<li><a href="{% url "category" %}">Pants & Shorts</a></li>
-																<li><a href="{% url "category" %}">Outerwear</a></li>
-																<li><a href="{% url "category" %}">Swimwear</a></li>
+																<li><a href="{% url "app:category" %}">Jackets</a></li>
+																<li><a href="{% url "app:category" %}">Dresses<span class="menu-label menu-label--color3">SALE</span></a></li>
+																<li><a href="{% url "app:category" %}">Blouses & Tops</a></li>
+																<li><a href="{% url "app:category" %}">Cardigans & Pullovers</a></li>
+																<li><a href="{% url "app:category" %}">Skirts</a></li>
+																<li><a href="{% url "app:category" %}">Pants & Shorts</a></li>
+																<li><a href="{% url "app:category" %}">Outerwear</a></li>
+																<li><a href="{% url "app:category" %}">Swimwear</a></li>
 															</ul>
 														</li>
-														<li><a href="{% url "category" %}">Blouses & Tops</a></li>
-														<li><a href="{% url "category" %}">Cardigans & Pullovers</a></li>
-														<li><a href="{% url "category" %}">Skirts</a></li>
-														<li><a href="{% url "category" %}">Pants & Shorts</a></li>
-														<li><a href="{% url "category" %}">Outerwear</a></li>
-														<li><a href="{% url "category" %}">Swimwear</a></li>
+														<li><a href="{% url "app:category" %}">Blouses & Tops</a></li>
+														<li><a href="{% url "app:category" %}">Cardigans & Pullovers</a></li>
+														<li><a href="{% url "app:category" %}">Skirts</a></li>
+														<li><a href="{% url "app:category" %}">Pants & Shorts</a></li>
+														<li><a href="{% url "app:category" %}">Outerwear</a></li>
+														<li><a href="{% url "app:category" %}">Swimwear</a></li>
 													</ul>
 												</li>
-												<li><a href="{% url "category" %}">Blouses & Tops</a></li>
-												<li><a href="{% url "category" %}">Cardigans & Pullovers</a></li>
-												<li><a href="{% url "category" %}">Skirts</a></li>
-												<li><a href="{% url "category" %}">Pants & Shorts</a></li>
-												<li><a href="{% url "category" %}">Outerwear</a></li>
-												<li><a href="{% url "category" %}">Swimwear</a></li>
+												<li><a href="{% url "app:category" %}">Blouses & Tops</a></li>
+												<li><a href="{% url "app:category" %}">Cardigans & Pullovers</a></li>
+												<li><a href="{% url "app:category" %}">Skirts</a></li>
+												<li><a href="{% url "app:category" %}">Pants & Shorts</a></li>
+												<li><a href="{% url "app:category" %}">Outerwear</a></li>
+												<li><a href="{% url "app:category" %}">Swimwear</a></li>
 											</ul>
 										</li>
-										<li><a href="{% url "category" %}">Cardigans & Pullovers</a></li>
-										<li><a href="{% url "category" %}">Skirts</a></li>
-										<li><a href="{% url "category" %}">Pants & Shorts</a></li>
-										<li><a href="{% url "category" %}">Outerwear</a></li>
-										<li><a href="{% url "category" %}">Swimwear</a></li>
+										<li><a href="{% url "app:category" %}">Cardigans & Pullovers</a></li>
+										<li><a href="{% url "app:category" %}">Skirts</a></li>
+										<li><a href="{% url "app:category" %}">Pants & Shorts</a></li>
+										<li><a href="{% url "app:category" %}">Outerwear</a></li>
+										<li><a href="{% url "app:category" %}">Swimwear</a></li>
 									</ul>
 								</li>
-								<li><a href="{% url "category" %}">Cardigans & Pullovers</a></li>
-								<li><a href="{% url "category" %}">Skirts</a></li>
-								<li><a href="{% url "category" %}">Pants & Shorts</a></li>
-								<li><a href="{% url "category" %}">Outerwear</a></li>
-								<li><a href="{% url "category" %}">Swimwear</a></li>
+								<li><a href="{% url "app:category" %}">Cardigans & Pullovers</a></li>
+								<li><a href="{% url "app:category" %}">Skirts</a></li>
+								<li><a href="{% url "app:category" %}">Pants & Shorts</a></li>
+								<li><a href="{% url "app:category" %}">Outerwear</a></li>
+								<li><a href="{% url "app:category" %}">Swimwear</a></li>
 							</ul>
 						</div>
 						<div class="mmenu-col">
-							<h3 class="submenu-title"><a href="{% url "category" %}">Accessories</a></h3>
+							<h3 class="submenu-title"><a href="{% url "app:category" %}">Accessories</a></h3>
 							<ul class="submenu-list">
-								<li><a href="{% url "category" %}">Jackets</a></li>
-								<li><a href="{% url "category" %}">Dresses</a></li>
-								<li><a href="{% url "category" %}">Blouses & Tops</a></li>
-								<li><a href="{% url "category" %}">Cardigans & Pullovers</a></li>
-								<li><a href="{% url "category" %}">Skirts<span class="menu-label">SALE</span></a></li>
-								<li><a href="{% url "category" %}">Pants & Shorts</a></li>
-								<li><a href="{% url "category" %}">Outerwear</a></li>
+								<li><a href="{% url "app:category" %}">Jackets</a></li>
+								<li><a href="{% url "app:category" %}">Dresses</a></li>
+								<li><a href="{% url "app:category" %}">Blouses & Tops</a></li>
+								<li><a href="{% url "app:category" %}">Cardigans & Pullovers</a></li>
+								<li><a href="{% url "app:category" %}">Skirts<span class="menu-label">SALE</span></a></li>
+								<li><a href="{% url "app:category" %}">Pants & Shorts</a></li>
+								<li><a href="{% url "app:category" %}">Outerwear</a></li>
 							</ul>
 						</div>
 						<div class="mmenu-col">
-							<h3 class="submenu-title"><a href="{% url "category" %}">Brands</a></h3>
+							<h3 class="submenu-title"><a href="{% url "app:category" %}">Brands</a></h3>
 							<ul class="submenu-list">
-								<li><a href="{% url "category" %}">Jackets</a></li>
-								<li><a href="{% url "category" %}">Dresses</a></li>
-								<li><a href="{% url "category" %}">Blouses & Tops</a></li>
-								<li><a href="{% url "category" %}">Cardigans & Pullovers</a></li>
-								<li><a href="{% url "category" %}">Skirts<span class="menu-label menu-label--color1">SALE</span></a></li>
-								<li><a href="{% url "category" %}">Pants & Shorts</a></li>
-								<li><a href="{% url "category" %}">Outerwear</a></li>
+								<li><a href="{% url "app:category" %}">Jackets</a></li>
+								<li><a href="{% url "app:category" %}">Dresses</a></li>
+								<li><a href="{% url "app:category" %}">Blouses & Tops</a></li>
+								<li><a href="{% url "app:category" %}">Cardigans & Pullovers</a></li>
+								<li><a href="{% url "app:category" %}">Skirts<span class="menu-label menu-label--color1">SALE</span></a></li>
+								<li><a href="{% url "app:category" %}">Pants & Shorts</a></li>
+								<li><a href="{% url "app:category" %}">Outerwear</a></li>
 							</ul>
 						</div>
 						<div class="mmenu-bottom justify-content-center">
@@ -456,9 +456,9 @@
 					</li>
 					<li><a href="#">Pages<span class="arrow"><i class="icon-angle-right"></i></span></a>
 						<ul class="nav-level-2">
-							<li><a href="{% url "product" %}">Product page<span class="arrow"><i class="icon-angle-right"></i></span></a>
+							<li><a href="{% url "app:product" %}">Product page<span class="arrow"><i class="icon-angle-right"></i></span></a>
 								<ul class="nav-level-3">
-									<li><a href="{% url "product" %}">Product page variant 1<span class="menu-label menu-label--color3">Popular</span></a></li>
+									<li><a href="{% url "app:product" %}">Product page variant 1<span class="menu-label menu-label--color3">Popular</span></a></li>
 									<li><a href="product-2.html">Product page variant 2</a></li>
 									<li><a href="product-3.html">Product page variant 3</a></li>
 									<li><a href="product-4.html">Product page variant 4</a></li>
@@ -467,14 +467,14 @@
 									<li><a href="product-7.html">Product page variant 7</a></li>
 								</ul>
 							</li>
-							<li><a href="{% url "category" %}">Category page<span class="arrow"><i class="icon-angle-right"></i></span></a>
+							<li><a href="{% url "app:category" %}">Category page<span class="arrow"><i class="icon-angle-right"></i></span></a>
 								
 							</li>
-							<li><a href="{% url "cart" %}">Cart & Checkout<span class="arrow"><i class="icon-angle-right"></i></span></a>
+							<li><a href="{% url "app:cart" %}">Cart & Checkout<span class="arrow"><i class="icon-angle-right"></i></span></a>
 								<ul class="nav-level-3">
-									<li><a href="{% url "cart" %}">Cart Page</a></li>
+									<li><a href="{% url "app:cart" %}">Cart Page</a></li>
 									<li><a href="cart-empty.html">Empty cart</a></li>
-									<li><a href="{% url "checkout" %}">Checkout variant 1</a></li>
+									<li><a href="{% url "app:checkout" %}">Checkout variant 1</a></li>
 									
 									
 								</ul>
@@ -499,58 +499,58 @@
 							<li><a href="coming-soon.html" target="_blank">Coming soon</a></li>
 						</ul>
 					</li>
-					<li><a href="{% url "category" %}">New Arrivals<span class="arrow"><i class="icon-angle-right"></i></span></a>
+					<li><a href="{% url "app:category" %}">New Arrivals<span class="arrow"><i class="icon-angle-right"></i></span></a>
 						<ul class="nav-level-2">
-							<li><a href="{% url "category" %}">Shoes<span class="arrow"><i class="icon-angle-right"></i></span></a>
+							<li><a href="{% url "app:category" %}">Shoes<span class="arrow"><i class="icon-angle-right"></i></span></a>
 								<ul class="nav-level-3">
-									<li><a href="{% url "category" %}">Heels</a></li>
-									<li><a href="{% url "category" %}">Boots</a></li>
-									<li><a href="{% url "category" %}">Flats</a></li>
-									<li><a href="{% url "category" %}">Sneakers &amp; Athletic</a></li>
-									<li><a href="{% url "category" %}">Clogs &amp; Mules</a></li>
+									<li><a href="{% url "app:category" %}">Heels</a></li>
+									<li><a href="{% url "app:category" %}">Boots</a></li>
+									<li><a href="{% url "app:category" %}">Flats</a></li>
+									<li><a href="{% url "app:category" %}">Sneakers &amp; Athletic</a></li>
+									<li><a href="{% url "app:category" %}">Clogs &amp; Mules</a></li>
 								</ul>
 							</li>
-							<li><a href="{% url "category" %}">Tops<span class="arrow"><i class="icon-angle-right"></i></span></a>
+							<li><a href="{% url "app:category" %}">Tops<span class="arrow"><i class="icon-angle-right"></i></span></a>
 								<ul class="nav-level-3">
-									<li><a href="{% url "category" %}">Dresses</a></li>
-									<li><a href="{% url "category" %}">Shirts &amp; Tops</a></li>
-									<li><a href="{% url "category" %}">Coats &amp; Outerwear</a></li>
-									<li><a href="{% url "category" %}">Sweaters</a></li>
+									<li><a href="{% url "app:category" %}">Dresses</a></li>
+									<li><a href="{% url "app:category" %}">Shirts &amp; Tops</a></li>
+									<li><a href="{% url "app:category" %}">Coats &amp; Outerwear</a></li>
+									<li><a href="{% url "app:category" %}">Sweaters</a></li>
 								</ul>
 							</li>
-							<li><a href="{% url "category" %}">Shoes<span class="arrow"><i class="icon-angle-right"></i></span></a>
+							<li><a href="{% url "app:category" %}">Shoes<span class="arrow"><i class="icon-angle-right"></i></span></a>
 								<ul class="nav-level-3">
-									<li><a href="{% url "category" %}">Heels</a></li>
-									<li><a href="{% url "category" %}">Boots</a></li>
-									<li><a href="{% url "category" %}">Flats</a></li>
-									<li><a href="{% url "category" %}">Sneakers &amp; Athletic</a></li>
-									<li><a href="{% url "category" %}">Clogs &amp; Mules</a></li>
+									<li><a href="{% url "app:category" %}">Heels</a></li>
+									<li><a href="{% url "app:category" %}">Boots</a></li>
+									<li><a href="{% url "app:category" %}">Flats</a></li>
+									<li><a href="{% url "app:category" %}">Sneakers &amp; Athletic</a></li>
+									<li><a href="{% url "app:category" %}">Clogs &amp; Mules</a></li>
 								</ul>
 							</li>
-							<li><a href="{% url "category" %}">Bottoms<span class="arrow"><i class="icon-angle-right"></i></span></a>
+							<li><a href="{% url "app:category" %}">Bottoms<span class="arrow"><i class="icon-angle-right"></i></span></a>
 								<ul class="nav-level-3">
-									<li><a href="{% url "category" %}">Jeans</a></li>
-									<li><a href="{% url "category" %}">Pants</a></li>
-									<li><a href="{% url "category" %}">slippers</a></li>
-									<li><a href="{% url "category" %}">suits</a></li>
-									<li><a href="{% url "category" %}">socks</a></li>
+									<li><a href="{% url "app:category" %}">Jeans</a></li>
+									<li><a href="{% url "app:category" %}">Pants</a></li>
+									<li><a href="{% url "app:category" %}">slippers</a></li>
+									<li><a href="{% url "app:category" %}">suits</a></li>
+									<li><a href="{% url "app:category" %}">socks</a></li>
 								</ul>
 							</li>
-							<li><a href="{% url "category" %}">Accessories<span class="arrow"><i class="icon-angle-right"></i></span></a>
+							<li><a href="{% url "app:category" %}">Accessories<span class="arrow"><i class="icon-angle-right"></i></span></a>
 								<ul class="nav-level-3">
-									<li><a href="{% url "category" %}">Sunglasses</a></li>
-									<li><a href="{% url "category" %}">Hats</a></li>
-									<li><a href="{% url "category" %}">Watches</a></li>
-									<li><a href="{% url "category" %}">Jewelry</a></li>
-									<li><a href="{% url "category" %}">Belts</a></li>
+									<li><a href="{% url "app:category" %}">Sunglasses</a></li>
+									<li><a href="{% url "app:category" %}">Hats</a></li>
+									<li><a href="{% url "app:category" %}">Watches</a></li>
+									<li><a href="{% url "app:category" %}">Jewelry</a></li>
+									<li><a href="{% url "app:category" %}">Belts</a></li>
 								</ul>
 							</li>
-							<li><a href="{% url "category" %}">Bags<span class="arrow"><i class="icon-angle-right"></i></span></a>
+							<li><a href="{% url "app:category" %}">Bags<span class="arrow"><i class="icon-angle-right"></i></span></a>
 								<ul class="nav-level-3">
-									<li><a href="{% url "category" %}">Handbags</a></li>
-									<li><a href="{% url "category" %}">Backpacks</a></li>
-									<li><a href="{% url "category" %}">Luggage</a></li>
-									<li><a href="{% url "category" %}">wallets</a></li>
+									<li><a href="{% url "app:category" %}">Handbags</a></li>
+									<li><a href="{% url "app:category" %}">Backpacks</a></li>
+									<li><a href="{% url "app:category" %}">Luggage</a></li>
+									<li><a href="{% url "app:category" %}">wallets</a></li>
 								</ul>
 							</li>
 						</ul>
@@ -598,7 +598,7 @@
 		<ul>
 			<li><a href="account-create.html"><span>Log In</span><i class="icon-login"></i></a></li>
 			<li><a href="account-create.html"><span>Register</span><i class="icon-user2"></i></a></li>
-			<li><a href="{% url "checkout" %}"><span>Checkout</span><i class="icon-card"></i></a></li>
+			<li><a href="{% url "app:checkout" %}"><span>Checkout</span><i class="icon-card"></i></a></li>
 		</ul>
 		<div class="dropdn-form-wrapper">
 			<h5>Quick Login</h5>
@@ -622,7 +622,7 @@
 		<div class="minicart-drop-content js-dropdn-content-scroll">
 			<div class="minicart-prd row">
 				<div class="minicart-prd-image image-hover-scale-circle col">
-					<a href="{% url "product" %}"><img class="lazyload fade-up" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/static/images/skins/fashion/products/product-01-1.webp" alt=""></a>
+					<a href="{% url "app:product" %}"><img class="lazyload fade-up" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/static/images/skins/fashion/products/product-01-1.webp" alt=""></a>
 				</div>
 				<div class="minicart-prd-info col">
 					<div class="minicart-prd-tag">FOXic</div>
@@ -639,7 +639,7 @@
 			</div>
 			<div class="minicart-prd row">
 				<div class="minicart-prd-image image-hover-scale-circle col">
-					<a href="{% url "product" %}"><img class="lazyload fade-up" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/static/images/skins/fashion/products/product-16-1.webp" alt=""></a>
+					<a href="{% url "app:product" %}"><img class="lazyload fade-up" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/static/images/skins/fashion/products/product-16-1.webp" alt=""></a>
 				</div>
 				<div class="minicart-prd-info col">
 					<div class="minicart-prd-tag">FOXic</div>
@@ -688,8 +688,8 @@
 				<div class="minicart-drop-total-price col" data-header-cart-total="">$340</div>
 			</div>
 			<div class="minicart-drop-actions">
-				<a href="{% url "cart" %}" class="btn btn--md btn--grey"><i class="fa fa-shopping-basket"></i><span>Cart Page</span></a>
-				<a href="{% url "checkout" %}" class="btn btn--md"><i class="fa fa-shopping-basket"></i><span>Check out</span></a>
+				<a href="{% url "app:cart" %}" class="btn btn--md btn--grey"><i class="fa fa-shopping-basket"></i><span>Cart Page</span></a>
+				<a href="{% url "app:checkout" %}" class="btn btn--md"><i class="fa fa-shopping-basket"></i><span>Check out</span></a>
 			</div>
 			
 		</div>
@@ -701,7 +701,7 @@
 	<div class="holder breadcrumbs-wrap mt-0">
 	<div class="container">
 		<ul class="breadcrumbs">
-			<li><a href="{% url "index" %}">Home</a></li>
+			<li><a href="{% url "app:index" %}">Home</a></li>
 			<li><span>Category</span></li>
 		</ul>
 	</div>
@@ -709,7 +709,7 @@
 	<div class="holder holder-mt-medium">
 	<div class="container">
 		<div class="row bnr-grid vert-margin-small">
-			<div class="col-18 col-sm-6"><a href="{% url "category" %}" target="_self" class="bnr-wrap">
+			<div class="col-18 col-sm-6"><a href="{% url "app:category" %}" target="_self" class="bnr-wrap">
 				<div class="bnr custom-caption image-hover-scale bnr--middle bnr--center" data-fontratio="5.7">
 					<div class="bnr-img  image-container" style="padding-bottom: 68.22%">
 						<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/static/images/skins/fashion/banner-category-03.webp" class="lazyload fade-up" alt="Banner"></div>
@@ -722,7 +722,7 @@
 				</div>
 			</a>
 			</div>
-			<div class="col-18 col-sm-6"><a href="{% url "category" %}" target="_self" class="bnr-wrap">
+			<div class="col-18 col-sm-6"><a href="{% url "app:category" %}" target="_self" class="bnr-wrap">
 				<div class="bnr custom-caption image-hover-scale bnr--middle bnr--center" data-fontratio="5.7">
 					<div class="bnr-img  image-container" style="padding-bottom: 68.22%">
 						<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/static/images/skins/fashion/banner-category-04.webp" class="lazyload fade-up" alt="Banner"></div>
@@ -734,7 +734,7 @@
 				</div>
 			</a>
 			</div>
-			<div class="col-18 col-sm-6"><a href="{% url "category" %}" target="_self" class="bnr-wrap">
+			<div class="col-18 col-sm-6"><a href="{% url "app:category" %}" target="_self" class="bnr-wrap">
 				<div class="bnr custom-caption image-hover-scale bnr--middle bnr--center" data-fontratio="5.7">
 					<div class="bnr-img  image-container" style="padding-bottom: 68.22%">
 						<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/static/images/skins/fashion/banner-category-05.webp" class="lazyload fade-up" alt="Banner"></div>
@@ -826,22 +826,22 @@
 		</div>
 		<div class="sidebar-block_content">
 			<ul class="category-list">
-				<li class="active"><a href="{% url "category" %}" title="Casual" class="open">Casual&nbsp;<span>(30)</span></a>
+				<li class="active"><a href="{% url "app:category" %}" title="Casual" class="open">Casual&nbsp;<span>(30)</span></a>
 					<div class="toggle-category js-toggle-category"><span><i class="fas fa-angle-down"></i></span></div>
 					<ul class="category-list category-list">
-						<li><a href="{% url "category" %}" title="Men">Men&nbsp;<span>(10)</span></a></li>
-						<li><a href="{% url "category" %}" title="Women">Women&nbsp;<span>(10)</span></a></li>
-						<li><a href="{% url "category" %}" title="Accessories">Accessories&nbsp;<span>(10)</span></a></li>
+						<li><a href="{% url "app:category" %}" title="Men">Men&nbsp;<span>(10)</span></a></li>
+						<li><a href="{% url "app:category" %}" title="Women">Women&nbsp;<span>(10)</span></a></li>
+						<li><a href="{% url "app:category" %}" title="Accessories">Accessories&nbsp;<span>(10)</span></a></li>
 					</ul>
 				</li>
-				<li><a href="{% url "category" %}" title="T-Shirts" class="open">T-Shirts</a></li>
-				<li><a href="{% url "category" %}" title="Medical" class="open">Medical</a></li>
-				<li><a href="{% url "category" %}" title="FoodMarket" class="open">FoodMarket</a></li>
-				<li><a href="{% url "category" %}" title="Bikes" class="open">Bikes&nbsp;<span>(12)</span></a></li>
-				<li><a href="{% url "category" %}" title="Cosmetics" class="open">Cosmetics&nbsp;<span>(16)</span></a></li>
-				<li><a href="{% url "category" %}" title="Fishing" class="open">Fishing&nbsp;<span>(20)</span></a></li>
-				<li><a href="{% url "category" %}" title="Electronics" class="open">Electronics&nbsp;<span>(15)</span></a></li>
-				<li><a href="{% url "category" %}" title="Games" class="open">Games&nbsp;<span>(14)</span></a></li>
+				<li><a href="{% url "app:category" %}" title="T-Shirts" class="open">T-Shirts</a></li>
+				<li><a href="{% url "app:category" %}" title="Medical" class="open">Medical</a></li>
+				<li><a href="{% url "app:category" %}" title="FoodMarket" class="open">FoodMarket</a></li>
+				<li><a href="{% url "app:category" %}" title="Bikes" class="open">Bikes&nbsp;<span>(12)</span></a></li>
+				<li><a href="{% url "app:category" %}" title="Cosmetics" class="open">Cosmetics&nbsp;<span>(16)</span></a></li>
+				<li><a href="{% url "app:category" %}" title="Fishing" class="open">Fishing&nbsp;<span>(20)</span></a></li>
+				<li><a href="{% url "app:category" %}" title="Electronics" class="open">Electronics&nbsp;<span>(15)</span></a></li>
+				<li><a href="{% url "app:category" %}" title="Games" class="open">Games&nbsp;<span>(14)</span></a></li>
 			</ul>
 		</div>
 	</div>
@@ -1005,13 +1005,13 @@
 				</div>
 				<div class="prd-rating justify-content-center"><i class="fa fa-star checked"></i><i class="fa fa-star checked"></i><i class="fa fa-star checked"></i><i class="fa fa-star checked"></i><i class="fa fa-star checked"></i></div>
 				<div class="prd-tag"><a href="#">FOXic</a></div>
-				<h2 class="prd-title"><a href="{% url "product" %}">Leather Pegged Pants</a></h2>
+				<h2 class="prd-title"><a href="{% url "app:product" %}">Leather Pegged Pants</a></h2>
 				<div class="prd-description">
 					Quisque volutpat condimentum velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam nec ante sed lacinia.
 				</div>
 				<div class="prd-action">
 					<form action="#">
-						<button class="btn js-prd-addtocart" data-product='{"name": "Leather Pegged Pants", "path":"/static/images/skins/fashion/products/product-01-1.webp", "url":"{% url "product" %}", "aspect_ratio":0.778}'>Add To Cart</button>
+						<button class="btn js-prd-addtocart" data-product='{"name": "Leather Pegged Pants", "path":"/static/images/skins/fashion/products/product-01-1.webp", "url":"{% url "app:product" %}", "aspect_ratio":0.778}'>Add To Cart</button>
 					</form>
 				</div>
 			</div>
@@ -1026,7 +1026,7 @@
 				<div class="prd-action">
 					<div class="prd-action-left">
 						<form action="#">
-							<button class="btn js-prd-addtocart" data-product='{"name": "Leather Pegged Pants", "path":"/static/images/skins/fashion/products/product-01-1.webp", "url":"{% url "product" %}", "aspect_ratio":0.778}'>Add To Cart</button>
+							<button class="btn js-prd-addtocart" data-product='{"name": "Leather Pegged Pants", "path":"/static/images/skins/fashion/products/product-01-1.webp", "url":"{% url "app:product" %}", "aspect_ratio":0.778}'>Add To Cart</button>
 						</form>
 					</div>
 				</div>
@@ -1038,7 +1038,7 @@
     <div class="prd prd--style2 prd-labels--max prd-labels-shadow ">
 	<div class="prd-inside">
 		<div class="prd-img-area">
-			<a href="{% url "product" %}" class="prd-img image-hover-scale image-container">
+			<a href="{% url "app:product" %}" class="prd-img image-hover-scale image-container">
 				<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/static/images/skins/fashion/products/product-02-1.webp" alt="Oversize Cotton Dress" class="js-prd-img lazyload fade-up">
 				<div class="foxic-loader"></div>
 				<div class="prd-big-squared-labels">
@@ -1069,13 +1069,13 @@
 				</div>
 				<div class="prd-rating justify-content-center"><i class="fa fa-star checked"></i><i class="fa fa-star checked"></i><i class="fa fa-star checked"></i><i class="fa fa-star checked"></i><i class="fa fa-star checked"></i></div>
 				<div class="prd-tag"><a href="#">Seiko</a></div>
-				<h2 class="prd-title"><a href="{% url "product" %}">Oversize Cotton Dress</a></h2>
+				<h2 class="prd-title"><a href="{% url "app:product" %}">Oversize Cotton Dress</a></h2>
 				<div class="prd-description">
 					Quisque volutpat condimentum velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam nec ante sed lacinia.
 				</div>
 				<div class="prd-action">
 					<form action="#">
-						<button class="btn js-prd-addtocart" data-product='{"name": "Oversize Cotton Dress", "path":"/static/images/skins/fashion/products/product-02-1.webp", "url":"{% url "product" %}", "aspect_ratio":0.778}'>Add To Cart</button>
+						<button class="btn js-prd-addtocart" data-product='{"name": "Oversize Cotton Dress", "path":"/static/images/skins/fashion/products/product-02-1.webp", "url":"{% url "app:product" %}", "aspect_ratio":0.778}'>Add To Cart</button>
 					</form>
 				</div>
 			</div>
@@ -1090,7 +1090,7 @@
 				<div class="prd-action">
 					<div class="prd-action-left">
 						<form action="#">
-							<button class="btn js-prd-addtocart" data-product='{"name": "Oversize Cotton Dress", "path":"/static/images/skins/fashion/products/product-02-1.webp", "url":"{% url "product" %}", "aspect_ratio":0.778}'>Add To Cart</button>
+							<button class="btn js-prd-addtocart" data-product='{"name": "Oversize Cotton Dress", "path":"/static/images/skins/fashion/products/product-02-1.webp", "url":"{% url "app:product" %}", "aspect_ratio":0.778}'>Add To Cart</button>
 						</form>
 					</div>
 				</div>
@@ -1100,7 +1100,7 @@
 </div><div class="prd prd--style2 prd-labels--max prd-labels-shadow ">
 	<div class="prd-inside">
 		<div class="prd-img-area">
-			<a href="{% url "product" %}" class="prd-img image-hover-scale image-container">
+			<a href="{% url "app:product" %}" class="prd-img image-hover-scale image-container">
 				<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/static/images/skins/fashion/products/product-03-1.webp" alt="Oversized Cotton Blouse" class="js-prd-img lazyload fade-up">
 				<div class="foxic-loader"></div>
 				<div class="prd-big-squared-labels">
@@ -1129,13 +1129,13 @@
 				</div>
 				<div class="prd-rating justify-content-center"><i class="fa fa-star checked"></i><i class="fa fa-star checked"></i><i class="fa fa-star checked"></i><i class="fa fa-star checked"></i><i class="fa fa-star checked"></i></div>
 				<div class="prd-tag"><a href="#">Banita</a></div>
-				<h2 class="prd-title"><a href="{% url "product" %}">Oversized Cotton Blouse</a></h2>
+				<h2 class="prd-title"><a href="{% url "app:product" %}">Oversized Cotton Blouse</a></h2>
 				<div class="prd-description">
 					Quisque volutpat condimentum velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam nec ante sed lacinia.
 				</div>
 				<div class="prd-action">
 					<form action="#">
-						<button class="btn js-prd-addtocart" data-product='{"name": "Oversized Cotton Blouse", "path":"/static/images/skins/fashion/products/product-03-1.webp", "url":"{% url "product" %}", "aspect_ratio":0.778}'>Add To Cart</button>
+						<button class="btn js-prd-addtocart" data-product='{"name": "Oversized Cotton Blouse", "path":"/static/images/skins/fashion/products/product-03-1.webp", "url":"{% url "app:product" %}", "aspect_ratio":0.778}'>Add To Cart</button>
 					</form>
 				</div>
 			</div>
@@ -1151,7 +1151,7 @@
 				<div class="prd-action">
 					<div class="prd-action-left">
 						<form action="#">
-							<button class="btn js-prd-addtocart" data-product='{"name": "Oversized Cotton Blouse", "path":"/static/images/skins/fashion/products/product-03-1.webp", "url":"{% url "product" %}", "aspect_ratio":0.778}'>Add To Cart</button>
+							<button class="btn js-prd-addtocart" data-product='{"name": "Oversized Cotton Blouse", "path":"/static/images/skins/fashion/products/product-03-1.webp", "url":"{% url "app:product" %}", "aspect_ratio":0.778}'>Add To Cart</button>
 						</form>
 					</div>
 				</div>
@@ -1161,7 +1161,7 @@
 </div><div class="prd prd--style2 prd-labels--max prd-labels-shadow ">
 	<div class="prd-inside">
 		<div class="prd-img-area">
-			<a href="{% url "product" %}" class="prd-img image-hover-scale image-container">
+			<a href="{% url "app:product" %}" class="prd-img image-hover-scale image-container">
 				<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/static/images/skins/fashion/products/product-04-1.webp" alt="Suede Leather Mini Skirt" class="js-prd-img lazyload fade-up">
 				<div class="foxic-loader"></div>
 				<div class="prd-big-squared-labels">
@@ -1184,13 +1184,13 @@
 				</div>
 				<div class="prd-rating justify-content-center"><i class="fa fa-star checked"></i><i class="fa fa-star checked"></i><i class="fa fa-star checked"></i><i class="fa fa-star checked"></i><i class="fa fa-star checked"></i></div>
 				<div class="prd-tag"><a href="#">Bigsteps</a></div>
-				<h2 class="prd-title"><a href="{% url "product" %}">Suede Leather Mini Skirt</a></h2>
+				<h2 class="prd-title"><a href="{% url "app:product" %}">Suede Leather Mini Skirt</a></h2>
 				<div class="prd-description">
 					Quisque volutpat condimentum velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam nec ante sed lacinia.
 				</div>
 				<div class="prd-action">
 					<form action="#">
-						<button class="btn js-prd-addtocart" data-product='{"name": "Suede Leather Mini Skirt", "path":"/static/images/skins/fashion/products/product-04-1.webp", "url":"{% url "product" %}", "aspect_ratio":0.778}'>Add To Cart</button>
+						<button class="btn js-prd-addtocart" data-product='{"name": "Suede Leather Mini Skirt", "path":"/static/images/skins/fashion/products/product-04-1.webp", "url":"{% url "app:product" %}", "aspect_ratio":0.778}'>Add To Cart</button>
 					</form>
 				</div>
 			</div>
@@ -1205,7 +1205,7 @@
 				<div class="prd-action">
 					<div class="prd-action-left">
 						<form action="#">
-							<button class="btn js-prd-addtocart" data-product='{"name": "Suede Leather Mini Skirt", "path":"/static/images/skins/fashion/products/product-04-1.webp", "url":"{% url "product" %}", "aspect_ratio":0.778}'>Add To Cart</button>
+							<button class="btn js-prd-addtocart" data-product='{"name": "Suede Leather Mini Skirt", "path":"/static/images/skins/fashion/products/product-04-1.webp", "url":"{% url "app:product" %}", "aspect_ratio":0.778}'>Add To Cart</button>
 						</form>
 					</div>
 				</div>
@@ -1215,7 +1215,7 @@
 </div><div class="prd prd--style2 prd-labels--max prd-labels-shadow ">
 	<div class="prd-inside">
 		<div class="prd-img-area">
-			<a href="{% url "product" %}" class="prd-img image-hover-scale image-container">
+			<a href="{% url "app:product" %}" class="prd-img image-hover-scale image-container">
 				<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/static/images/skins/fashion/products/product-05-1.webp" alt="Cotton T-shirt" class="js-prd-img lazyload fade-up">
 				<div class="foxic-loader"></div>
 				<div class="prd-big-squared-labels">
@@ -1238,13 +1238,13 @@
 				</div>
 				<div class="prd-rating justify-content-center"><i class="fa fa-star checked"></i><i class="fa fa-star checked"></i><i class="fa fa-star checked"></i><i class="fa fa-star checked"></i><i class="fa fa-star checked"></i></div>
 				<div class="prd-tag"><a href="#">FOXic</a></div>
-				<h2 class="prd-title"><a href="{% url "product" %}">Cotton T-shirt</a></h2>
+				<h2 class="prd-title"><a href="{% url "app:product" %}">Cotton T-shirt</a></h2>
 				<div class="prd-description">
 					Quisque volutpat condimentum velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam nec ante sed lacinia.
 				</div>
 				<div class="prd-action">
 					<form action="#">
-						<button class="btn js-prd-addtocart" data-product='{"name": "Cotton T-shirt", "path":"/static/images/skins/fashion/products/product-05-1.webp", "url":"{% url "product" %}", "aspect_ratio":0.778}'>Add To Cart</button>
+						<button class="btn js-prd-addtocart" data-product='{"name": "Cotton T-shirt", "path":"/static/images/skins/fashion/products/product-05-1.webp", "url":"{% url "app:product" %}", "aspect_ratio":0.778}'>Add To Cart</button>
 					</form>
 				</div>
 			</div>
@@ -1259,7 +1259,7 @@
 				<div class="prd-action">
 					<div class="prd-action-left">
 						<form action="#">
-							<button class="btn js-prd-addtocart" data-product='{"name": "Cotton T-shirt", "path":"/static/images/skins/fashion/products/product-05-1.webp", "url":"{% url "product" %}", "aspect_ratio":0.778}'>Add To Cart</button>
+							<button class="btn js-prd-addtocart" data-product='{"name": "Cotton T-shirt", "path":"/static/images/skins/fashion/products/product-05-1.webp", "url":"{% url "app:product" %}", "aspect_ratio":0.778}'>Add To Cart</button>
 						</form>
 					</div>
 				</div>
@@ -1269,7 +1269,7 @@
 </div><div class="prd prd--style2 prd-labels--max prd-labels-shadow ">
 	<div class="prd-inside">
 		<div class="prd-img-area">
-			<a href="{% url "product" %}" class="prd-img image-hover-scale image-container">
+			<a href="{% url "app:product" %}" class="prd-img image-hover-scale image-container">
 				<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/static/images/skins/fashion/products/product-06-1.webp" alt="Midi Dress with Belt" class="js-prd-img lazyload fade-up">
 				<div class="foxic-loader"></div>
 				<div class="prd-big-squared-labels">
@@ -1300,13 +1300,13 @@
 				</div>
 				<div class="prd-rating justify-content-center"><i class="fa fa-star checked"></i><i class="fa fa-star checked"></i><i class="fa fa-star checked"></i><i class="fa fa-star checked"></i><i class="fa fa-star checked"></i></div>
 				<div class="prd-tag"><a href="#">Seiko</a></div>
-				<h2 class="prd-title"><a href="{% url "product" %}">Midi Dress with Belt</a></h2>
+				<h2 class="prd-title"><a href="{% url "app:product" %}">Midi Dress with Belt</a></h2>
 				<div class="prd-description">
 					Quisque volutpat condimentum velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam nec ante sed lacinia.
 				</div>
 				<div class="prd-action">
 					<form action="#">
-						<button class="btn js-prd-addtocart" data-product='{"name": "Midi Dress with Belt", "path":"/static/images/skins/fashion/products/product-06-1.webp", "url":"{% url "product" %}", "aspect_ratio":0.778}'>Add To Cart</button>
+						<button class="btn js-prd-addtocart" data-product='{"name": "Midi Dress with Belt", "path":"/static/images/skins/fashion/products/product-06-1.webp", "url":"{% url "app:product" %}", "aspect_ratio":0.778}'>Add To Cart</button>
 					</form>
 				</div>
 			</div>
@@ -1321,7 +1321,7 @@
 				<div class="prd-action">
 					<div class="prd-action-left">
 						<form action="#">
-							<button class="btn js-prd-addtocart" data-product='{"name": "Midi Dress with Belt", "path":"/static/images/skins/fashion/products/product-06-1.webp", "url":"{% url "product" %}", "aspect_ratio":0.778}'>Add To Cart</button>
+							<button class="btn js-prd-addtocart" data-product='{"name": "Midi Dress with Belt", "path":"/static/images/skins/fashion/products/product-06-1.webp", "url":"{% url "app:product" %}", "aspect_ratio":0.778}'>Add To Cart</button>
 						</form>
 					</div>
 				</div>
@@ -1331,7 +1331,7 @@
 </div><div class="prd prd--style2 prd-labels--max prd-labels-shadow prd-outstock">
 	<div class="prd-inside">
 		<div class="prd-img-area">
-			<a href="{% url "product" %}" class="prd-img image-hover-scale image-container">
+			<a href="{% url "app:product" %}" class="prd-img image-hover-scale image-container">
 				<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/static/images/skins/fashion/products/product-07-1.webp" alt="Denim Mini Skirt" class="js-prd-img lazyload fade-up">
 				<div class="foxic-loader"></div>
 				<div class="prd-big-squared-labels">
@@ -1353,13 +1353,13 @@
 				</div>
 				<div class="prd-rating justify-content-center"><i class="fa fa-star checked"></i><i class="fa fa-star checked"></i><i class="fa fa-star checked"></i><i class="fa fa-star checked"></i><i class="fa fa-star checked"></i></div>
 				<div class="prd-tag"><a href="#">Banita</a></div>
-				<h2 class="prd-title"><a href="{% url "product" %}">Denim Mini Skirt</a></h2>
+				<h2 class="prd-title"><a href="{% url "app:product" %}">Denim Mini Skirt</a></h2>
 				<div class="prd-description">
 					Quisque volutpat condimentum velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam nec ante sed lacinia.
 				</div>
 				<div class="prd-action">
 					<form action="#">
-						<button class="btn js-prd-addtocart" data-product='{"name": "Denim Mini Skirt", "path":"/static/images/skins/fashion/products/product-07-1.webp", "url":"{% url "product" %}", "aspect_ratio":0.778}'>Add To Cart</button>
+						<button class="btn js-prd-addtocart" data-product='{"name": "Denim Mini Skirt", "path":"/static/images/skins/fashion/products/product-07-1.webp", "url":"{% url "app:product" %}", "aspect_ratio":0.778}'>Add To Cart</button>
 					</form>
 				</div>
 			</div>
@@ -1374,7 +1374,7 @@
 				<div class="prd-action">
 					<div class="prd-action-left">
 						<form action="#">
-							<button class="btn js-prd-addtocart" data-product='{"name": "Denim Mini Skirt", "path":"/static/images/skins/fashion/products/product-07-1.webp", "url":"{% url "product" %}", "aspect_ratio":0.778}'>Add To Cart</button>
+							<button class="btn js-prd-addtocart" data-product='{"name": "Denim Mini Skirt", "path":"/static/images/skins/fashion/products/product-07-1.webp", "url":"{% url "app:product" %}", "aspect_ratio":0.778}'>Add To Cart</button>
 						</form>
 					</div>
 				</div>
@@ -1384,7 +1384,7 @@
 </div><div class="prd prd--style2 prd-labels--max prd-labels-shadow ">
 	<div class="prd-inside">
 		<div class="prd-img-area">
-			<a href="{% url "product" %}" class="prd-img image-hover-scale image-container">
+			<a href="{% url "app:product" %}" class="prd-img image-hover-scale image-container">
 				<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/static/images/skins/fashion/products/product-08-1.webp" alt="Peg Leg Trousers" class="js-prd-img lazyload fade-up">
 				<div class="foxic-loader"></div>
 				<div class="prd-big-squared-labels">
@@ -1412,13 +1412,13 @@
 				</div>
 				<div class="prd-rating justify-content-center"><i class="fa fa-star checked"></i><i class="fa fa-star checked"></i><i class="fa fa-star checked"></i><i class="fa fa-star checked"></i><i class="fa fa-star checked"></i></div>
 				<div class="prd-tag"><a href="#">FOXic</a></div>
-				<h2 class="prd-title"><a href="{% url "product" %}">Peg Leg Trousers</a></h2>
+				<h2 class="prd-title"><a href="{% url "app:product" %}">Peg Leg Trousers</a></h2>
 				<div class="prd-description">
 					Quisque volutpat condimentum velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam nec ante sed lacinia.
 				</div>
 				<div class="prd-action">
 					<form action="#">
-						<button class="btn js-prd-addtocart" data-product='{"name": "Peg Leg Trousers", "path":"/static/images/skins/fashion/products/product-08-1.webp", "url":"{% url "product" %}", "aspect_ratio":0.778}'>Add To Cart</button>
+						<button class="btn js-prd-addtocart" data-product='{"name": "Peg Leg Trousers", "path":"/static/images/skins/fashion/products/product-08-1.webp", "url":"{% url "app:product" %}", "aspect_ratio":0.778}'>Add To Cart</button>
 					</form>
 				</div>
 			</div>
@@ -1434,7 +1434,7 @@
 				<div class="prd-action">
 					<div class="prd-action-left">
 						<form action="#">
-							<button class="btn js-prd-addtocart" data-product='{"name": "Peg Leg Trousers", "path":"/static/images/skins/fashion/products/product-08-1.webp", "url":"{% url "product" %}", "aspect_ratio":0.778}'>Add To Cart</button>
+							<button class="btn js-prd-addtocart" data-product='{"name": "Peg Leg Trousers", "path":"/static/images/skins/fashion/products/product-08-1.webp", "url":"{% url "app:product" %}", "aspect_ratio":0.778}'>Add To Cart</button>
 						</form>
 					</div>
 				</div>
@@ -1444,7 +1444,7 @@
 </div><div class="prd prd--style2 prd-labels--max prd-labels-shadow ">
 	<div class="prd-inside">
 		<div class="prd-img-area">
-			<a href="{% url "product" %}" class="prd-img image-hover-scale image-container">
+			<a href="{% url "app:product" %}" class="prd-img image-hover-scale image-container">
 				<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/static/images/skins/fashion/products/product-09-1.webp" alt="Skinny Jeans" class="js-prd-img lazyload fade-up">
 				<div class="foxic-loader"></div>
 				<div class="prd-big-squared-labels">
@@ -1468,13 +1468,13 @@
 				</div>
 				<div class="prd-rating justify-content-center"><i class="fa fa-star checked"></i><i class="fa fa-star checked"></i><i class="fa fa-star checked"></i><i class="fa fa-star checked"></i><i class="fa fa-star checked"></i></div>
 				<div class="prd-tag"><a href="#">FOXic</a></div>
-				<h2 class="prd-title"><a href="{% url "product" %}">Skinny Jeans</a></h2>
+				<h2 class="prd-title"><a href="{% url "app:product" %}">Skinny Jeans</a></h2>
 				<div class="prd-description">
 					Quisque volutpat condimentum velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam nec ante sed lacinia.
 				</div>
 				<div class="prd-action">
 					<form action="#">
-						<button class="btn js-prd-addtocart" data-product='{"name": "Skinny Jeans", "path":"/static/images/skins/fashion/products/product-09-1.webp", "url":"{% url "product" %}", "aspect_ratio":0.778}'>Add To Cart</button>
+						<button class="btn js-prd-addtocart" data-product='{"name": "Skinny Jeans", "path":"/static/images/skins/fashion/products/product-09-1.webp", "url":"{% url "app:product" %}", "aspect_ratio":0.778}'>Add To Cart</button>
 					</form>
 				</div>
 			</div>
@@ -1489,7 +1489,7 @@
 				<div class="prd-action">
 					<div class="prd-action-left">
 						<form action="#">
-							<button class="btn js-prd-addtocart" data-product='{"name": "Skinny Jeans", "path":"/static/images/skins/fashion/products/product-09-1.webp", "url":"{% url "product" %}", "aspect_ratio":0.778}'>Add To Cart</button>
+							<button class="btn js-prd-addtocart" data-product='{"name": "Skinny Jeans", "path":"/static/images/skins/fashion/products/product-09-1.webp", "url":"{% url "app:product" %}", "aspect_ratio":0.778}'>Add To Cart</button>
 						</form>
 					</div>
 				</div>
@@ -1499,7 +1499,7 @@
 </div><div class="prd prd--style2 prd-labels--max prd-labels-shadow ">
 	<div class="prd-inside">
 		<div class="prd-img-area">
-			<a href="{% url "product" %}" class="prd-img image-hover-scale image-container">
+			<a href="{% url "app:product" %}" class="prd-img image-hover-scale image-container">
 				<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/static/images/skins/fashion/products/product-10-1.webp" alt="Short Sleeve Blouse" class="js-prd-img lazyload fade-up">
 				<div class="foxic-loader"></div>
 				<div class="prd-big-squared-labels">
@@ -1527,13 +1527,13 @@
 				</div>
 				<div class="prd-rating justify-content-center"><i class="fa fa-star checked"></i><i class="fa fa-star checked"></i><i class="fa fa-star checked"></i><i class="fa fa-star checked"></i><i class="fa fa-star checked"></i></div>
 				<div class="prd-tag"><a href="#">FOXic</a></div>
-				<h2 class="prd-title"><a href="{% url "product" %}">Short Sleeve Blouse</a></h2>
+				<h2 class="prd-title"><a href="{% url "app:product" %}">Short Sleeve Blouse</a></h2>
 				<div class="prd-description">
 					Quisque volutpat condimentum velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam nec ante sed lacinia.
 				</div>
 				<div class="prd-action">
 					<form action="#">
-						<button class="btn js-prd-addtocart" data-product='{"name": "Short Sleeve Blouse", "path":"/static/images/skins/fashion/products/product-10-1.webp", "url":"{% url "product" %}", "aspect_ratio":0.778}'>Add To Cart</button>
+						<button class="btn js-prd-addtocart" data-product='{"name": "Short Sleeve Blouse", "path":"/static/images/skins/fashion/products/product-10-1.webp", "url":"{% url "app:product" %}", "aspect_ratio":0.778}'>Add To Cart</button>
 					</form>
 				</div>
 			</div>
@@ -1549,7 +1549,7 @@
 				<div class="prd-action">
 					<div class="prd-action-left">
 						<form action="#">
-							<button class="btn js-prd-addtocart" data-product='{"name": "Short Sleeve Blouse", "path":"/static/images/skins/fashion/products/product-10-1.webp", "url":"{% url "product" %}", "aspect_ratio":0.778}'>Add To Cart</button>
+							<button class="btn js-prd-addtocart" data-product='{"name": "Short Sleeve Blouse", "path":"/static/images/skins/fashion/products/product-10-1.webp", "url":"{% url "app:product" %}", "aspect_ratio":0.778}'>Add To Cart</button>
 						</form>
 					</div>
 				</div>
@@ -1559,7 +1559,7 @@
 </div><div class="prd prd--style2 prd-labels--max prd-labels-shadow ">
 	<div class="prd-inside">
 		<div class="prd-img-area">
-			<a href="{% url "product" %}" class="prd-img image-hover-scale image-container">
+			<a href="{% url "app:product" %}" class="prd-img image-hover-scale image-container">
 				<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/static/images/skins/fashion/products/product-11-1.webp" alt="Jogger Lounge Pants" class="js-prd-img lazyload fade-up">
 				<div class="foxic-loader"></div>
 				<div class="prd-big-squared-labels">
@@ -1587,13 +1587,13 @@
 				</div>
 				<div class="prd-rating justify-content-center"><i class="fa fa-star checked"></i><i class="fa fa-star checked"></i><i class="fa fa-star checked"></i><i class="fa fa-star checked"></i><i class="fa fa-star checked"></i></div>
 				<div class="prd-tag"><a href="#">FOXic</a></div>
-				<h2 class="prd-title"><a href="{% url "product" %}">Jogger Lounge Pants</a></h2>
+				<h2 class="prd-title"><a href="{% url "app:product" %}">Jogger Lounge Pants</a></h2>
 				<div class="prd-description">
 					Quisque volutpat condimentum velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam nec ante sed lacinia.
 				</div>
 				<div class="prd-action">
 					<form action="#">
-						<button class="btn js-prd-addtocart" data-product='{"name": "Jogger Lounge Pants", "path":"/static/images/skins/fashion/products/product-11-1.webp", "url":"{% url "product" %}", "aspect_ratio":0.778}'>Add To Cart</button>
+						<button class="btn js-prd-addtocart" data-product='{"name": "Jogger Lounge Pants", "path":"/static/images/skins/fashion/products/product-11-1.webp", "url":"{% url "app:product" %}", "aspect_ratio":0.778}'>Add To Cart</button>
 					</form>
 				</div>
 			</div>
@@ -1609,7 +1609,7 @@
 				<div class="prd-action">
 					<div class="prd-action-left">
 						<form action="#">
-							<button class="btn js-prd-addtocart" data-product='{"name": "Jogger Lounge Pants", "path":"/static/images/skins/fashion/products/product-11-1.webp", "url":"{% url "product" %}", "aspect_ratio":0.778}'>Add To Cart</button>
+							<button class="btn js-prd-addtocart" data-product='{"name": "Jogger Lounge Pants", "path":"/static/images/skins/fashion/products/product-11-1.webp", "url":"{% url "app:product" %}", "aspect_ratio":0.778}'>Add To Cart</button>
 						</form>
 					</div>
 				</div>
@@ -1619,7 +1619,7 @@
 </div><div class="prd prd--style2 prd-labels--max prd-labels-shadow ">
 	<div class="prd-inside">
 		<div class="prd-img-area">
-			<a href="{% url "product" %}" class="prd-img image-hover-scale image-container">
+			<a href="{% url "app:product" %}" class="prd-img image-hover-scale image-container">
 				<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/static/images/skins/fashion/products/product-12-1.webp" alt="Elastic Cuff Joggers Pants" class="js-prd-img lazyload fade-up">
 				<div class="foxic-loader"></div>
 				<div class="prd-big-squared-labels">
@@ -1647,13 +1647,13 @@
 				</div>
 				<div class="prd-rating justify-content-center"><i class="fa fa-star checked"></i><i class="fa fa-star checked"></i><i class="fa fa-star checked"></i><i class="fa fa-star checked"></i><i class="fa fa-star checked"></i></div>
 				<div class="prd-tag"><a href="#">FOXic</a></div>
-				<h2 class="prd-title"><a href="{% url "product" %}">Elastic Cuff Joggers Pants</a></h2>
+				<h2 class="prd-title"><a href="{% url "app:product" %}">Elastic Cuff Joggers Pants</a></h2>
 				<div class="prd-description">
 					Quisque volutpat condimentum velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam nec ante sed lacinia.
 				</div>
 				<div class="prd-action">
 					<form action="#">
-						<button class="btn js-prd-addtocart" data-product='{"name": "Elastic Cuff Joggers Pants", "path":"/static/images/skins/fashion/products/product-12-1.webp", "url":"{% url "product" %}", "aspect_ratio":0.778}'>Add To Cart</button>
+						<button class="btn js-prd-addtocart" data-product='{"name": "Elastic Cuff Joggers Pants", "path":"/static/images/skins/fashion/products/product-12-1.webp", "url":"{% url "app:product" %}", "aspect_ratio":0.778}'>Add To Cart</button>
 					</form>
 				</div>
 			</div>
@@ -1669,7 +1669,7 @@
 				<div class="prd-action">
 					<div class="prd-action-left">
 						<form action="#">
-							<button class="btn js-prd-addtocart" data-product='{"name": "Elastic Cuff Joggers Pants", "path":"/static/images/skins/fashion/products/product-12-1.webp", "url":"{% url "product" %}", "aspect_ratio":0.778}'>Add To Cart</button>
+							<button class="btn js-prd-addtocart" data-product='{"name": "Elastic Cuff Joggers Pants", "path":"/static/images/skins/fashion/products/product-12-1.webp", "url":"{% url "app:product" %}", "aspect_ratio":0.778}'>Add To Cart</button>
 						</form>
 					</div>
 				</div>
@@ -1719,7 +1719,7 @@
 			<div class="prd prd--style2 prd-labels--max prd-labels-shadow ">
 	<div class="prd-inside">
 		<div class="prd-img-area">
-			<a href="{% url "product" %}" class="prd-img image-hover-scale image-container">
+			<a href="{% url "app:product" %}" class="prd-img image-hover-scale image-container">
 				<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/static/images/skins/fashion/products/product-06-1.webp" alt="Midi Dress with Belt" class="js-prd-img lazyload fade-up">
 				<div class="foxic-loader"></div>
 				<div class="prd-big-squared-labels">
@@ -1750,13 +1750,13 @@
 				</div>
 				<div class="prd-rating justify-content-center"><i class="fa fa-star checked"></i><i class="fa fa-star checked"></i><i class="fa fa-star checked"></i><i class="fa fa-star checked"></i><i class="fa fa-star checked"></i></div>
 				<div class="prd-tag"><a href="#">Seiko</a></div>
-				<h2 class="prd-title"><a href="{% url "product" %}">Midi Dress with Belt</a></h2>
+				<h2 class="prd-title"><a href="{% url "app:product" %}">Midi Dress with Belt</a></h2>
 				<div class="prd-description">
 					Quisque volutpat condimentum velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam nec ante sed lacinia.
 				</div>
 				<div class="prd-action">
 					<form action="#">
-						<button class="btn js-prd-addtocart" data-product='{"name": "Midi Dress with Belt", "path":"/static/images/skins/fashion/products/product-06-1.webp", "url":"{% url "product" %}", "aspect_ratio":0.778}'>Add To Cart</button>
+						<button class="btn js-prd-addtocart" data-product='{"name": "Midi Dress with Belt", "path":"/static/images/skins/fashion/products/product-06-1.webp", "url":"{% url "app:product" %}", "aspect_ratio":0.778}'>Add To Cart</button>
 					</form>
 				</div>
 			</div>
@@ -1771,7 +1771,7 @@
 				<div class="prd-action">
 					<div class="prd-action-left">
 						<form action="#">
-							<button class="btn js-prd-addtocart" data-product='{"name": "Midi Dress with Belt", "path":"/static/images/skins/fashion/products/product-06-1.webp", "url":"{% url "product" %}", "aspect_ratio":0.778}'>Add To Cart</button>
+							<button class="btn js-prd-addtocart" data-product='{"name": "Midi Dress with Belt", "path":"/static/images/skins/fashion/products/product-06-1.webp", "url":"{% url "app:product" %}", "aspect_ratio":0.778}'>Add To Cart</button>
 						</form>
 					</div>
 				</div>
@@ -1781,7 +1781,7 @@
 </div><div class="prd prd--style2 prd-labels--max prd-labels-shadow ">
 	<div class="prd-inside">
 		<div class="prd-img-area">
-			<a href="{% url "product" %}" class="prd-img image-hover-scale image-container">
+			<a href="{% url "app:product" %}" class="prd-img image-hover-scale image-container">
 				<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/static/images/skins/fashion/products/product-17-1.webp" alt="Stand Collar Shirt" class="js-prd-img lazyload fade-up">
 				<div class="foxic-loader"></div>
 				<div class="prd-big-squared-labels">
@@ -1809,13 +1809,13 @@
 				</div>
 				<div class="prd-rating justify-content-center"><i class="fa fa-star checked"></i><i class="fa fa-star checked"></i><i class="fa fa-star checked"></i><i class="fa fa-star checked"></i><i class="fa fa-star checked"></i></div>
 				<div class="prd-tag"><a href="#">FOXic</a></div>
-				<h2 class="prd-title"><a href="{% url "product" %}">Stand Collar Shirt</a></h2>
+				<h2 class="prd-title"><a href="{% url "app:product" %}">Stand Collar Shirt</a></h2>
 				<div class="prd-description">
 					Quisque volutpat condimentum velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam nec ante sed lacinia.
 				</div>
 				<div class="prd-action">
 					<form action="#">
-						<button class="btn js-prd-addtocart" data-product='{"name": "Stand Collar Shirt", "path":"/static/images/skins/fashion/products/product-17-1.webp", "url":"{% url "product" %}", "aspect_ratio":0.778}'>Add To Cart</button>
+						<button class="btn js-prd-addtocart" data-product='{"name": "Stand Collar Shirt", "path":"/static/images/skins/fashion/products/product-17-1.webp", "url":"{% url "app:product" %}", "aspect_ratio":0.778}'>Add To Cart</button>
 					</form>
 				</div>
 			</div>
@@ -1831,7 +1831,7 @@
 				<div class="prd-action">
 					<div class="prd-action-left">
 						<form action="#">
-							<button class="btn js-prd-addtocart" data-product='{"name": "Stand Collar Shirt", "path":"/static/images/skins/fashion/products/product-17-1.webp", "url":"{% url "product" %}", "aspect_ratio":0.778}'>Add To Cart</button>
+							<button class="btn js-prd-addtocart" data-product='{"name": "Stand Collar Shirt", "path":"/static/images/skins/fashion/products/product-17-1.webp", "url":"{% url "app:product" %}", "aspect_ratio":0.778}'>Add To Cart</button>
 						</form>
 					</div>
 				</div>
@@ -1841,7 +1841,7 @@
 </div><div class="prd prd--style2 prd-labels--max prd-labels-shadow ">
 	<div class="prd-inside">
 		<div class="prd-img-area">
-			<a href="{% url "product" %}" class="prd-img image-hover-scale image-container">
+			<a href="{% url "app:product" %}" class="prd-img image-hover-scale image-container">
 				<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/static/images/skins/fashion/products/product-21-1.webp" alt="Genuine Leather Strap Watch" class="js-prd-img lazyload fade-up">
 				<div class="foxic-loader"></div>
 				<div class="prd-big-squared-labels">
@@ -1865,13 +1865,13 @@
 				</div>
 				<div class="prd-rating justify-content-center"><i class="fa fa-star checked"></i><i class="fa fa-star checked"></i><i class="fa fa-star checked"></i><i class="fa fa-star checked"></i><i class="fa fa-star checked"></i></div>
 				<div class="prd-tag"><a href="#">FOXic</a></div>
-				<h2 class="prd-title"><a href="{% url "product" %}">Genuine Leather Strap Watch</a></h2>
+				<h2 class="prd-title"><a href="{% url "app:product" %}">Genuine Leather Strap Watch</a></h2>
 				<div class="prd-description">
 					Quisque volutpat condimentum velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam nec ante sed lacinia.
 				</div>
 				<div class="prd-action">
 					<form action="#">
-						<button class="btn js-prd-addtocart" data-product='{"name": "Genuine Leather Strap Watch", "path":"/static/images/skins/fashion/products/product-21-1.webp", "url":"{% url "product" %}", "aspect_ratio":0.778}'>Add To Cart</button>
+						<button class="btn js-prd-addtocart" data-product='{"name": "Genuine Leather Strap Watch", "path":"/static/images/skins/fashion/products/product-21-1.webp", "url":"{% url "app:product" %}", "aspect_ratio":0.778}'>Add To Cart</button>
 					</form>
 				</div>
 			</div>
@@ -1886,7 +1886,7 @@
 				<div class="prd-action">
 					<div class="prd-action-left">
 						<form action="#">
-							<button class="btn js-prd-addtocart" data-product='{"name": "Genuine Leather Strap Watch", "path":"/static/images/skins/fashion/products/product-21-1.webp", "url":"{% url "product" %}", "aspect_ratio":0.778}'>Add To Cart</button>
+							<button class="btn js-prd-addtocart" data-product='{"name": "Genuine Leather Strap Watch", "path":"/static/images/skins/fashion/products/product-21-1.webp", "url":"{% url "app:product" %}", "aspect_ratio":0.778}'>Add To Cart</button>
 						</form>
 					</div>
 				</div>
@@ -1896,7 +1896,7 @@
 </div><div class="prd prd--style2 prd-labels--max prd-labels-shadow ">
 	<div class="prd-inside">
 		<div class="prd-img-area">
-			<a href="{% url "product" %}" class="prd-img image-hover-scale image-container">
+			<a href="{% url "app:product" %}" class="prd-img image-hover-scale image-container">
 				<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/static/images/skins/fashion/products/product-26-1.webp" alt="Pureboost Running Shoes" class="js-prd-img lazyload fade-up">
 				<div class="foxic-loader"></div>
 				<div class="prd-big-squared-labels">
@@ -1919,13 +1919,13 @@
 				</div>
 				<div class="prd-rating justify-content-center"><i class="fa fa-star checked"></i><i class="fa fa-star checked"></i><i class="fa fa-star checked"></i><i class="fa fa-star checked"></i><i class="fa fa-star checked"></i></div>
 				<div class="prd-tag"><a href="#">FOXic</a></div>
-				<h2 class="prd-title"><a href="{% url "product" %}">Pureboost Running Shoes</a></h2>
+				<h2 class="prd-title"><a href="{% url "app:product" %}">Pureboost Running Shoes</a></h2>
 				<div class="prd-description">
 					Quisque volutpat condimentum velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam nec ante sed lacinia.
 				</div>
 				<div class="prd-action">
 					<form action="#">
-						<button class="btn js-prd-addtocart" data-product='{"name": "Pureboost Running Shoes", "path":"/static/images/skins/fashion/products/product-26-1.webp", "url":"{% url "product" %}", "aspect_ratio":0.778}'>Add To Cart</button>
+						<button class="btn js-prd-addtocart" data-product='{"name": "Pureboost Running Shoes", "path":"/static/images/skins/fashion/products/product-26-1.webp", "url":"{% url "app:product" %}", "aspect_ratio":0.778}'>Add To Cart</button>
 					</form>
 				</div>
 			</div>
@@ -1940,7 +1940,7 @@
 				<div class="prd-action">
 					<div class="prd-action-left">
 						<form action="#">
-							<button class="btn js-prd-addtocart" data-product='{"name": "Pureboost Running Shoes", "path":"/static/images/skins/fashion/products/product-26-1.webp", "url":"{% url "product" %}", "aspect_ratio":0.778}'>Add To Cart</button>
+							<button class="btn js-prd-addtocart" data-product='{"name": "Pureboost Running Shoes", "path":"/static/images/skins/fashion/products/product-26-1.webp", "url":"{% url "app:product" %}", "aspect_ratio":0.778}'>Add To Cart</button>
 						</form>
 					</div>
 				</div>
@@ -1950,7 +1950,7 @@
 </div><div class="prd prd--style2 prd-labels--max prd-labels-shadow ">
 	<div class="prd-inside">
 		<div class="prd-img-area">
-			<a href="{% url "product" %}" class="prd-img image-hover-scale image-container">
+			<a href="{% url "app:product" %}" class="prd-img image-hover-scale image-container">
 				<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/static/images/skins/fashion/products/product-30-1.webp" alt="Multiple Pocket Waist Pack" class="js-prd-img lazyload fade-up">
 				<div class="foxic-loader"></div>
 				<div class="prd-big-squared-labels">
@@ -1973,13 +1973,13 @@
 				</div>
 				<div class="prd-rating justify-content-center"><i class="fa fa-star checked"></i><i class="fa fa-star checked"></i><i class="fa fa-star checked"></i><i class="fa fa-star checked"></i><i class="fa fa-star checked"></i></div>
 				<div class="prd-tag"><a href="#">FOXic</a></div>
-				<h2 class="prd-title"><a href="{% url "product" %}">Multiple Pocket Waist Pack</a></h2>
+				<h2 class="prd-title"><a href="{% url "app:product" %}">Multiple Pocket Waist Pack</a></h2>
 				<div class="prd-description">
 					Quisque volutpat condimentum velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam nec ante sed lacinia.
 				</div>
 				<div class="prd-action">
 					<form action="#">
-						<button class="btn js-prd-addtocart" data-product='{"name": "Multiple Pocket Waist Pack", "path":"/static/images/skins/fashion/products/product-30-1.webp", "url":"{% url "product" %}", "aspect_ratio":0.778}'>Add To Cart</button>
+						<button class="btn js-prd-addtocart" data-product='{"name": "Multiple Pocket Waist Pack", "path":"/static/images/skins/fashion/products/product-30-1.webp", "url":"{% url "app:product" %}", "aspect_ratio":0.778}'>Add To Cart</button>
 					</form>
 				</div>
 			</div>
@@ -1994,7 +1994,7 @@
 				<div class="prd-action">
 					<div class="prd-action-left">
 						<form action="#">
-							<button class="btn js-prd-addtocart" data-product='{"name": "Multiple Pocket Waist Pack", "path":"/static/images/skins/fashion/products/product-30-1.webp", "url":"{% url "product" %}", "aspect_ratio":0.778}'>Add To Cart</button>
+							<button class="btn js-prd-addtocart" data-product='{"name": "Multiple Pocket Waist Pack", "path":"/static/images/skins/fashion/products/product-30-1.webp", "url":"{% url "app:product" %}", "aspect_ratio":0.778}'>Add To Cart</button>
 						</form>
 					</div>
 				</div>
@@ -2105,7 +2105,7 @@
 						<div class="collapsed-content">
 							<ul>
 	<li><a href="account-details.html">My Account</a></li>
-	<li><a href="{% url "cart" %}">View Cart</a></li>
+	<li><a href="{% url "app:cart" %}">View Cart</a></li>
 	<li><a href="account-wishlist.html">My Wishlist</a></li>
 	<li><a href="account-history.html">Order Status</a></li>
 	<li><a href="account-history.html">Track My Order</a></li>
@@ -2130,7 +2130,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-auto sticky-addcart_image">
-					<a href="{% url "product" %}">
+					<a href="{% url "app:product" %}">
 						<img src="/static/images/skins/fashion/products/product-01-1.webp" alt=""/>
 					</a>
 				</div>
@@ -2175,20 +2175,20 @@
 				</div>
 				<div class="col popup-addedtocart_info">
 					<div class="row">
-						<a href="{% url "product" %}" class="col-auto popup-addedtocart_image">
+						<a href="{% url "app:product" %}" class="col-auto popup-addedtocart_image">
 							<span class="image-container w-100">
 								<img src="/static/images/skins/fashion/products/product-01-1.webp" alt=""/>
 							</span>
 						</a>
 						<div class="col popup-addedtocart_text">
-							<a href="{% url "product" %}" class="popup-addedtocart_title"></a>
-							<span class="popup-addedtocart_message">Added to <a href="{% url "cart" %}" class="underline">Cart</a></span>
+							<a href="{% url "app:product" %}" class="popup-addedtocart_title"></a>
+							<span class="popup-addedtocart_message">Added to <a href="{% url "app:cart" %}" class="underline">Cart</a></span>
 							<span class="popup-addedtocart_error_message"></span>
 						</div>
 					</div>
 				</div>
 				<div class="col-auto popup-addedtocart_actions">
-					<span>You can continue</span> <a href="#" class="btn btn--grey btn--sm js-open-drop" data-panel="#dropdnMinicart"><i class="fa fa-shopping-basket"></i><span>Check Cart</span></a> <span>or</span> <a href="{% url "checkout" %}" class="btn btn--invert btn--sm"><i class="fa fa-credit-card"></i><span>Check out</span></a>
+					<span>You can continue</span> <a href="#" class="btn btn--grey btn--sm js-open-drop" data-panel="#dropdnMinicart"><i class="fa fa-shopping-basket"></i><span>Check Cart</span></a> <span>or</span> <a href="{% url "app:checkout" %}" class="btn btn--invert btn--sm"><i class="fa fa-credit-card"></i><span>Check out</span></a>
 				</div>
 			</div>
 		</div>
@@ -2246,7 +2246,7 @@
 <div class="footer-sticky">
 	<div class="payment-notification-wrap js-pn" data-visible-time="3000" data-hidden-time="3000" data-delay="500"
 		 data-from="Aberdeen,Bakersfield,Birmingham,Cambridge,Youngstown"
-		 data-products='[{"productname":"Leather Pegged Pants", "productlink":"{% url "product" %}","productimage":"/static/images/skins/fashion/products/product-01-1.webp"},{"productname":"Black Fabric Backpack", "productlink":"{% url "product" %}","productimage":"/static/images/skins/fashion/products/product-28-1.webp"},{"productname":"Combined Chunky Sneakers", "productlink":"{% url "product" %}","productimage":"/static/images/skins/fashion/products/product-23-1.webp"}]'>
+		 data-products='[{"productname":"Leather Pegged Pants", "productlink":"{% url "app:product" %}","productimage":"/static/images/skins/fashion/products/product-01-1.webp"},{"productname":"Black Fabric Backpack", "productlink":"{% url "app:product" %}","productimage":"/static/images/skins/fashion/products/product-28-1.webp"},{"productname":"Combined Chunky Sneakers", "productlink":"{% url "app:product" %}","productimage":"/static/images/skins/fashion/products/product-23-1.webp"}]'>
 		<div class="payment-notification payment-notification--squared">
 			<div class="payment-notification-inside">
 				<div class="payment-notification-container">
@@ -2256,7 +2256,7 @@
 					<div class="payment-notification-content-wrapper">
 						<div class="payment-notification-content">
 							<div class="payment-notification-text">Someone purchased</div>
-							<a href="{% url "product" %}" class="payment-notification-name js-pn-name js-pn-link">Applewatch</a>
+							<a href="{% url "app:product" %}" class="payment-notification-name js-pn-name js-pn-link">Applewatch</a>
 							<div class="payment-notification-bottom">
 								<div class="payment-notification-when"><span class="js-pn-time">32</span> min ago</div>
 								<div class="payment-notification-from">from <span class="js-pn-from">Riverside</span></div>

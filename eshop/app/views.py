@@ -1,17 +1,22 @@
-from .models import (
-    Item,
-    Order,
-    OrderItem
-)
+from django.views.generic import View, TemplateView, CreateView, FormView, DetailView, ListView
 from django.utils import timezone
-from django.views.generic import ListView, DetailView, View
 from django.shortcuts import render, get_object_or_404, redirect
 from django.core.exceptions import ObjectDoesNotExist
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.contrib.auth.decorators import login_required
 from django.contrib import messages
 from django.shortcuts import render, redirect
-
+from django.contrib.auth import authenticate, login, logout
+from django.shortcuts import render, redirect
+from django.urls import reverse_lazy, reverse
+from django.core.paginator import Paginator
+from django.core.mail import send_mail
+from django.http import JsonResponse
+from django.conf import settings
+from django.db.models import Q
+from .models import *
+from .forms import *
+import requests
 # Create your views here.
 
 
@@ -29,7 +34,6 @@ def product(request):
 
 def cart(request):
 	return render(request, 'cart.html')
-
 
 def checkout(request):
 	return render(request, 'checkout.html')
@@ -50,115 +54,101 @@ def account(request):
 # Create your views here.
 
 
-class HomeView(ListView):
-    model = Item
+class EcomMixin(object):
+    def dispatch(self, request, *args, **kwargs):
+        cart_id = request.session.get("cart_id")
+        if cart_id:
+            cart_obj = Cart.objects.get(id=cart_id)
+            if request.user.is_authenticated and request.user.customer:
+                cart_obj.customer = request.user.customer
+                cart_obj.save()
+        return super().dispatch(request, *args, **kwargs)
+
+# To show cart item numbers on Navbar
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        cart_id = self.request.session.get('cart_id', None)
+        if cart_id:
+            cart = Cart.objects.get(id=cart_id)
+        else:
+            cart = None
+            context['cart'] = cart
+        return context
+
+
+# Add this code to Nvbar
+'''
+{{cart.cartproduct_set.count()}}
+'''
+
+
+class HomeView(EcomMixin, TemplateView):
     template_name = "home.html"
 
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context['myname'] = "Dipak Niroula"
+        all_products = Product.objects.all().order_by("-id")
+        paginator = Paginator(all_products, 8)
+        page_number = self.request.GET.get('page')
+        print(page_number)
+        product_list = paginator.get_page(page_number)
+        context['product_list'] = product_list
+        return context
 
-class ProductView(DetailView):
-    model = Item
+
+class ProductDetailView(EcomMixin, TemplateView):
     template_name = "products.html"
 
-
-class OrderSummaryView(LoginRequiredMixin, View):
-    def get(self, *args, **kwargs):
-
-        try:
-            order = Order.objects.get(user=self.request.user, ordered=False)
-            context = {
-                'object': order
-            }
-            return render(self.request, 'order_summary.html', context)
-        except ObjectDoesNotExist:
-            messages.error(self.request, "You do not have an order")
-            return redirect("/")
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        url_slug = self.kwargs['slug']
+        product = Product.objects.get(slug=url_slug)
+        product.view_count += 1
+        product.save()
+        context['product'] = product
+        return context
 
 
-#@login_required
-def add_to_cart(request, pk):
-    item = get_object_or_404(Item, pk=pk)
-    order_item, created = OrderItem.objects.get_or_create(
-        item=item,
-        user=request.user,
-        ordered=False
-    )
-    order_qs = Order.objects.filter(user=request.user, ordered=False)
+class AddToCartView(EcomMixin, TemplateView):
+    template_name = "addtocart.html"
 
-    if order_qs.exists():
-        order = order_qs[0]
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        # get product id from requested url
+        product_id = self.kwargs['slug']
+        print(product_id)
+        # get product
+        product_obj = Product.objects.get(id=product_id)
 
-        if order.items.filter(item__pk=item.pk).exists():
-            order_item.quantity += 1
-            order_item.save()
-            messages.info(request, "Added quantity Item")
-            return redirect("core:order-summary")
-        else:
-            order.items.add(order_item)
-            messages.info(request, "Item added to your cart")
-            return redirect("core:order-summary")
-    else:
-        ordered_date = timezone.now()
-        order = Order.objects.create(
-            user=request.user, ordered_date=ordered_date)
-        order.items.add(order_item)
-        messages.info(request, "Item added to your cart")
-        return redirect("core:order-summary")
+        # check if cart exists
+        cart_id = self.request.session.get("cart_id", None)
+        if cart_id:
+            cart_obj = Cart.objects.get(id=cart_id)
+            this_product_in_cart = cart_obj.cartproduct_set.filter(
+                product=product_obj)
 
-
-#@login_required
-def remove_from_cart(request, pk):
-    item = get_object_or_404(Item, pk=pk)
-    order_qs = Order.objects.filter(
-        user=request.user,
-        ordered=False
-    )
-    if order_qs.exists():
-        order = order_qs[0]
-        if order.items.filter(item__pk=item.pk).exists():
-            order_item = OrderItem.objects.filter(
-                item=item,
-                user=request.user,
-                ordered=False
-            )[0]
-            order_item.delete()
-            messages.info(request, "Item \"" +
-                          order_item.item.item_name+"\" remove from your cart")
-            return redirect("core:order-summary")
-        else:
-            messages.info(request, "This Item not in your cart")
-            return redirect("core:product", pk=pk)
-    else:
-        #add message doesnt have order
-        messages.info(request, "You do not have an Order")
-        return redirect("core:product", pk=pk)
-
-
-#@login_required
-def reduce_quantity_item(request, pk):
-    item = get_object_or_404(Item, pk=pk)
-    order_qs = Order.objects.filter(
-        user=request.user,
-        ordered=False
-    )
-    if order_qs.exists():
-        order = order_qs[0]
-        if order.items.filter(item__pk=item.pk).exists():
-            order_item = OrderItem.objects.filter(
-                item=item,
-                user=request.user,
-                ordered=False
-            )[0]
-            if order_item.quantity > 1:
-                order_item.quantity -= 1
-                order_item.save()
+            # item already exists in cart
+            if this_product_in_cart.exists():
+                cartproduct = this_product_in_cart.last()
+                cartproduct.quantity += 1
+                cartproduct.subtotal += product_obj.selling_price
+                cartproduct.save()
+                cart_obj.total += product_obj.selling_price
+                cart_obj.save()
+            # new item is added in cart
             else:
-                order_item.delete()
-            messages.info(request, "Item quantity was updated")
-            return redirect("core:order-summary")
+                cartproduct = CartProduct.objects.create(
+                    cart=cart_obj, product=product_obj, rate=product_obj.selling_price, quantity=1, subtotal=product_obj.selling_price)
+                cart_obj.total += product_obj.selling_price
+                cart_obj.save()
+
         else:
-            messages.info(request, "This Item not in your cart")
-            return redirect("core:order-summary")
-    else:
-        #add message doesnt have order
-        messages.info(request, "You do not have an Order")
-        return redirect("core:order-summary")
+            cart_obj = Cart.objects.create(total=0)
+            self.request.session['cart_id'] = cart_obj.id
+            cartproduct = CartProduct.objects.create(
+                cart=cart_obj, product=product_obj, rate=product_obj.selling_price, quantity=1, subtotal=product_obj.selling_price)
+            cart_obj.total += product_obj.selling_price
+            cart_obj.save()
+
+        return context

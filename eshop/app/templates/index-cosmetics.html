@@ -115,9 +115,9 @@
 		<div class="mmenu-submenu">
 			<ul class="submenu-list">
 
-	<li><a href="{% url "product" %}">Product page</a>
+	<li><a href="{% url "app:product" %}">Product page</a>
 		<ul>
-			<li><a href="{% url "product" %}">Product page variant 1<span class="menu-label menu-label--color3">Popular</span></a></li>
+			<li><a href="{% url "app:product" %}">Product page variant 1<span class="menu-label menu-label--color3">Popular</span></a></li>
 			<li><a href="product-2.html">Product page variant 2</a></li>
 			<li><a href="product-3.html">Product page variant 3</a></li>
 			<li><a href="product-4.html">Product page variant 4</a></li>
@@ -126,10 +126,10 @@
 			<li><a href="product-7.html">Product page variant 7</a></li>
 		</ul>
 	</li>
-	<li><a href="{% url "category" %}">Category page</a>
+	<li><a href="{% url "app:category" %}">Category page</a>
 		
 	</li>
-	<li><a href="{% url "cart" %}">Cart & Checkout</a>
+	<li><a href="{% url "app:cart" %}">Cart & Checkout</a>
 		
 	</li>
 	<li><a href="account-create.html">Account</a>
@@ -160,67 +160,67 @@
 				<div class="container">
 					<div class="mmenu-left width-25">
 						<div class="mmenu-bnr-wrap">
-							<a href="{% url "product" %}" class="image-hover-scale image-container w-100" style="padding-bottom: 102.91%">
+							<a href="{% url "app:product" %}" class="image-hover-scale image-container w-100" style="padding-bottom: 102.91%">
 								<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-srcset="/static/images/skins/cosmetics/menu/mmenu-bnr-01.webp" class="lazyload fade-up" alt="Banner">
 							</a>
 						</div>
 					</div>
 					<div class="mmenu-cols column-4">
 						<div class="mmenu-col">
-							<h3 class="submenu-title"><a href="{% url "category" %}">Collections</a></h3>
+							<h3 class="submenu-title"><a href="{% url "app:category" %}">Collections</a></h3>
 							<ul class="submenu-list">
-								<li><a href="{% url "category" %}">Martins d'Art 2020/21<span class="submenu-link-txt">Available in boutiques from June 2019</span></a></li>
-								<li><a href="{% url "category" %}">Spring-Summer 2021<span class="submenu-link-txt">Available in boutiques from March 2019</span></a></li>
-								<li><a href="{% url "category" %}">Spring-Summer 2021 Pre-Collection<span class="submenu-link-txt">In boutiques</span></a></li>
-								<li><a href="{% url "category" %}">Cruise 2020/21<span class="submenu-link-txt">In boutiques</span></a></li>
-								<li><a href="{% url "category" %}">Fall-Winter 2020/21</a></li>
+								<li><a href="{% url "app:category" %}">Martins d'Art 2020/21<span class="submenu-link-txt">Available in boutiques from June 2019</span></a></li>
+								<li><a href="{% url "app:category" %}">Spring-Summer 2021<span class="submenu-link-txt">Available in boutiques from March 2019</span></a></li>
+								<li><a href="{% url "app:category" %}">Spring-Summer 2021 Pre-Collection<span class="submenu-link-txt">In boutiques</span></a></li>
+								<li><a href="{% url "app:category" %}">Cruise 2020/21<span class="submenu-link-txt">In boutiques</span></a></li>
+								<li><a href="{% url "app:category" %}">Fall-Winter 2020/21</a></li>
 							</ul>
 						</div>
 						<div class="mmenu-col">
-							<h3 class="submenu-title"><a href="{% url "category" %}">Ready-to-wear</a></h3>
+							<h3 class="submenu-title"><a href="{% url "app:category" %}">Ready-to-wear</a></h3>
 							<ul class="submenu-list">
-								<li><a href="{% url "category" %}" class="active">Jackets</a>
+								<li><a href="{% url "app:category" %}" class="active">Jackets</a>
 									<ul class="sub-level">
-										<li><a href="{% url "category" %}">Bomber Jackets</a></li>
-										<li><a href="{% url "category" %}">Biker Jacket</a></li>
-										<li><a href="{% url "category" %}">Trucker Jacket</a></li>
-										<li><a href="{% url "category" %}">Denim Jackets</a></li>
-										<li><a href="{% url "category" %}">Blouson Jacket<span class="menu-label">SALE</span></a></li>
-										<li><a href="{% url "category" %}">Overcoat</a></li>
-										<li><a href="{% url "category" %}">Trench Coat</a></li>
+										<li><a href="{% url "app:category" %}">Bomber Jackets</a></li>
+										<li><a href="{% url "app:category" %}">Biker Jacket</a></li>
+										<li><a href="{% url "app:category" %}">Trucker Jacket</a></li>
+										<li><a href="{% url "app:category" %}">Denim Jackets</a></li>
+										<li><a href="{% url "app:category" %}">Blouson Jacket<span class="menu-label">SALE</span></a></li>
+										<li><a href="{% url "app:category" %}">Overcoat</a></li>
+										<li><a href="{% url "app:category" %}">Trench Coat</a></li>
 									</ul>
 								</li>
-								<li><a href="{% url "category" %}">Dresses<span class="menu-label menu-label--color3">SALE</span></a></li>
-								<li><a href="{% url "category" %}">Blouses & Tops</a></li>
-								<li><a href="{% url "category" %}">Cardigans & Pullovers</a></li>
-								<li><a href="{% url "category" %}">Skirts</a></li>
-								<li><a href="{% url "category" %}">Pants & Shorts</a></li>
-								<li><a href="{% url "category" %}">Outerwear</a></li>
-								<li><a href="{% url "category" %}">Swimwear</a></li>
+								<li><a href="{% url "app:category" %}">Dresses<span class="menu-label menu-label--color3">SALE</span></a></li>
+								<li><a href="{% url "app:category" %}">Blouses & Tops</a></li>
+								<li><a href="{% url "app:category" %}">Cardigans & Pullovers</a></li>
+								<li><a href="{% url "app:category" %}">Skirts</a></li>
+								<li><a href="{% url "app:category" %}">Pants & Shorts</a></li>
+								<li><a href="{% url "app:category" %}">Outerwear</a></li>
+								<li><a href="{% url "app:category" %}">Swimwear</a></li>
 							</ul>
 						</div>
 						<div class="mmenu-col">
-							<h3 class="submenu-title"><a href="{% url "category" %}">Accessories</a></h3>
+							<h3 class="submenu-title"><a href="{% url "app:category" %}">Accessories</a></h3>
 							<ul class="submenu-list">
-								<li><a href="{% url "category" %}">Jackets</a></li>
-								<li><a href="{% url "category" %}">Dresses</a></li>
-								<li><a href="{% url "category" %}">Blouses & Tops</a></li>
-								<li><a href="{% url "category" %}">Cardigans & Pullovers</a></li>
-								<li><a href="{% url "category" %}">Skirts<span class="menu-label">SALE</span></a></li>
-								<li><a href="{% url "category" %}">Pants & Shorts</a></li>
-								<li><a href="{% url "category" %}">Outerwear</a></li>
+								<li><a href="{% url "app:category" %}">Jackets</a></li>
+								<li><a href="{% url "app:category" %}">Dresses</a></li>
+								<li><a href="{% url "app:category" %}">Blouses & Tops</a></li>
+								<li><a href="{% url "app:category" %}">Cardigans & Pullovers</a></li>
+								<li><a href="{% url "app:category" %}">Skirts<span class="menu-label">SALE</span></a></li>
+								<li><a href="{% url "app:category" %}">Pants & Shorts</a></li>
+								<li><a href="{% url "app:category" %}">Outerwear</a></li>
 							</ul>
 						</div>
 						<div class="mmenu-col">
-							<h3 class="submenu-title"><a href="{% url "category" %}">Brands</a></h3>
+							<h3 class="submenu-title"><a href="{% url "app:category" %}">Brands</a></h3>
 							<ul class="submenu-list">
-								<li><a href="{% url "category" %}">Jackets</a></li>
-								<li><a href="{% url "category" %}">Dresses</a></li>
-								<li><a href="{% url "category" %}">Blouses & Tops</a></li>
-								<li><a href="{% url "category" %}">Cardigans & Pullovers</a></li>
-								<li><a href="{% url "category" %}">Skirts<span class="menu-label menu-label--color1">SALE</span></a></li>
-								<li><a href="{% url "category" %}">Pants & Shorts</a></li>
-								<li><a href="{% url "category" %}">Outerwear</a></li>
+								<li><a href="{% url "app:category" %}">Jackets</a></li>
+								<li><a href="{% url "app:category" %}">Dresses</a></li>
+								<li><a href="{% url "app:category" %}">Blouses & Tops</a></li>
+								<li><a href="{% url "app:category" %}">Cardigans & Pullovers</a></li>
+								<li><a href="{% url "app:category" %}">Skirts<span class="menu-label menu-label--color1">SALE</span></a></li>
+								<li><a href="{% url "app:category" %}">Pants & Shorts</a></li>
+								<li><a href="{% url "app:category" %}">Outerwear</a></li>
 							</ul>
 						</div>
 						<div class="mmenu-bottom justify-content-center">
@@ -293,22 +293,22 @@
 					</li>
 					<li><a href="#">Pages<span class="arrow"><i class="icon-angle-right"></i></span></a>
 						<ul class="nav-level-2">
-							<li><a href="{% url "product" %}">Product page<span class="arrow"><i class="icon-angle-right"></i></span></a>
+							<li><a href="{% url "app:product" %}">Product page<span class="arrow"><i class="icon-angle-right"></i></span></a>
 								<ul class="nav-level-3">
-									<li><a href="{% url "product" %}">Product page variant 1<span class="menu-label menu-label--color3">Popular</span></a></li>
+									<li><a href="{% url "app:product" %}">Product page variant 1<span class="menu-label menu-label--color3">Popular</span></a></li>
 									
 								</ul>
 							</li>
-							<li><a href="{% url "category" %}">Category page<span class="arrow"><i class="icon-angle-right"></i></span></a>
+							<li><a href="{% url "app:category" %}">Category page<span class="arrow"><i class="icon-angle-right"></i></span></a>
 								
 							</li>
-							<li><a href="{% url "cart" %}">Cart & Checkout<span class="arrow"><i class="icon-angle-right"></i></span></a>
+							<li><a href="{% url "app:cart" %}">Cart & Checkout<span class="arrow"><i class="icon-angle-right"></i></span></a>
 								<ul class="nav-level-3">
-									<li><a href="{% url "cart" %}">Cart Page</a></li>
+									<li><a href="{% url "app:cart" %}">Cart Page</a></li>
 									<li><a href="cart-empty.html">Empty cart</a></li>
-									<li><a href="{% url "checkout" %}">Checkout variant 1</a></li>
+									<li><a href="{% url "app:checkout" %}">Checkout variant 1</a></li>
 									<li><a href="checkout-2.html">Checkout variant 2</a></li>
-									<li><a href="{% url "checkout" %}">Checkout variant 3</a></li>
+									<li><a href="{% url "app:checkout" %}">Checkout variant 3</a></li>
 								</ul>
 							</li>
 							<li><a href="account-create.html">Account<span class="arrow"><i class="icon-angle-right"></i></span></a>
@@ -331,58 +331,58 @@
 							<li><a href="coming-soon.html" target="_blank">Coming soon</a></li>
 						</ul>
 					</li>
-					<li><a href="{% url "category" %}">New Arrivals<span class="arrow"><i class="icon-angle-right"></i></span></a>
+					<li><a href="{% url "app:category" %}">New Arrivals<span class="arrow"><i class="icon-angle-right"></i></span></a>
 						<ul class="nav-level-2">
-							<li><a href="{% url "category" %}">Shoes<span class="arrow"><i class="icon-angle-right"></i></span></a>
+							<li><a href="{% url "app:category" %}">Shoes<span class="arrow"><i class="icon-angle-right"></i></span></a>
 								<ul class="nav-level-3">
-									<li><a href="{% url "category" %}">Heels</a></li>
-									<li><a href="{% url "category" %}">Boots</a></li>
-									<li><a href="{% url "category" %}">Flats</a></li>
-									<li><a href="{% url "category" %}">Sneakers &amp; Athletic</a></li>
-									<li><a href="{% url "category" %}">Clogs &amp; Mules</a></li>
+									<li><a href="{% url "app:category" %}">Heels</a></li>
+									<li><a href="{% url "app:category" %}">Boots</a></li>
+									<li><a href="{% url "app:category" %}">Flats</a></li>
+									<li><a href="{% url "app:category" %}">Sneakers &amp; Athletic</a></li>
+									<li><a href="{% url "app:category" %}">Clogs &amp; Mules</a></li>
 								</ul>
 							</li>
-							<li><a href="{% url "category" %}">Tops<span class="arrow"><i class="icon-angle-right"></i></span></a>
+							<li><a href="{% url "app:category" %}">Tops<span class="arrow"><i class="icon-angle-right"></i></span></a>
 								<ul class="nav-level-3">
-									<li><a href="{% url "category" %}">Dresses</a></li>
-									<li><a href="{% url "category" %}">Shirts &amp; Tops</a></li>
-									<li><a href="{% url "category" %}">Coats &amp; Outerwear</a></li>
-									<li><a href="{% url "category" %}">Sweaters</a></li>
+									<li><a href="{% url "app:category" %}">Dresses</a></li>
+									<li><a href="{% url "app:category" %}">Shirts &amp; Tops</a></li>
+									<li><a href="{% url "app:category" %}">Coats &amp; Outerwear</a></li>
+									<li><a href="{% url "app:category" %}">Sweaters</a></li>
 								</ul>
 							</li>
-							<li><a href="{% url "category" %}">Shoes<span class="arrow"><i class="icon-angle-right"></i></span></a>
+							<li><a href="{% url "app:category" %}">Shoes<span class="arrow"><i class="icon-angle-right"></i></span></a>
 								<ul class="nav-level-3">
-									<li><a href="{% url "category" %}">Heels</a></li>
-									<li><a href="{% url "category" %}">Boots</a></li>
-									<li><a href="{% url "category" %}">Flats</a></li>
-									<li><a href="{% url "category" %}">Sneakers &amp; Athletic</a></li>
-									<li><a href="{% url "category" %}">Clogs &amp; Mules</a></li>
+									<li><a href="{% url "app:category" %}">Heels</a></li>
+									<li><a href="{% url "app:category" %}">Boots</a></li>
+									<li><a href="{% url "app:category" %}">Flats</a></li>
+									<li><a href="{% url "app:category" %}">Sneakers &amp; Athletic</a></li>
+									<li><a href="{% url "app:category" %}">Clogs &amp; Mules</a></li>
 								</ul>
 							</li>
-							<li><a href="{% url "category" %}">Bottoms<span class="arrow"><i class="icon-angle-right"></i></span></a>
+							<li><a href="{% url "app:category" %}">Bottoms<span class="arrow"><i class="icon-angle-right"></i></span></a>
 								<ul class="nav-level-3">
-									<li><a href="{% url "category" %}">Jeans</a></li>
-									<li><a href="{% url "category" %}">Pants</a></li>
-									<li><a href="{% url "category" %}">slippers</a></li>
-									<li><a href="{% url "category" %}">suits</a></li>
-									<li><a href="{% url "category" %}">socks</a></li>
+									<li><a href="{% url "app:category" %}">Jeans</a></li>
+									<li><a href="{% url "app:category" %}">Pants</a></li>
+									<li><a href="{% url "app:category" %}">slippers</a></li>
+									<li><a href="{% url "app:category" %}">suits</a></li>
+									<li><a href="{% url "app:category" %}">socks</a></li>
 								</ul>
 							</li>
-							<li><a href="{% url "category" %}">Accessories<span class="arrow"><i class="icon-angle-right"></i></span></a>
+							<li><a href="{% url "app:category" %}">Accessories<span class="arrow"><i class="icon-angle-right"></i></span></a>
 								<ul class="nav-level-3">
-									<li><a href="{% url "category" %}">Sunglasses</a></li>
-									<li><a href="{% url "category" %}">Hats</a></li>
-									<li><a href="{% url "category" %}">Watches</a></li>
-									<li><a href="{% url "category" %}">Jewelry</a></li>
-									<li><a href="{% url "category" %}">Belts</a></li>
+									<li><a href="{% url "app:category" %}">Sunglasses</a></li>
+									<li><a href="{% url "app:category" %}">Hats</a></li>
+									<li><a href="{% url "app:category" %}">Watches</a></li>
+									<li><a href="{% url "app:category" %}">Jewelry</a></li>
+									<li><a href="{% url "app:category" %}">Belts</a></li>
 								</ul>
 							</li>
-							<li><a href="{% url "category" %}">Bags<span class="arrow"><i class="icon-angle-right"></i></span></a>
+							<li><a href="{% url "app:category" %}">Bags<span class="arrow"><i class="icon-angle-right"></i></span></a>
 								<ul class="nav-level-3">
-									<li><a href="{% url "category" %}">Handbags</a></li>
-									<li><a href="{% url "category" %}">Backpacks</a></li>
-									<li><a href="{% url "category" %}">Luggage</a></li>
-									<li><a href="{% url "category" %}">wallets</a></li>
+									<li><a href="{% url "app:category" %}">Handbags</a></li>
+									<li><a href="{% url "app:category" %}">Backpacks</a></li>
+									<li><a href="{% url "app:category" %}">Luggage</a></li>
+									<li><a href="{% url "app:category" %}">wallets</a></li>
 								</ul>
 							</li>
 						</ul>
@@ -430,7 +430,7 @@
 		<ul>
 			<li><a href="account-create.html"><span>Log In</span><i class="icon-login"></i></a></li>
 			<li><a href="account-create.html"><span>Register</span><i class="icon-user2"></i></a></li>
-			<li><a href="{% url "checkout" %}"><span>Checkout</span><i class="icon-card"></i></a></li>
+			<li><a href="{% url "app:checkout" %}"><span>Checkout</span><i class="icon-card"></i></a></li>
 		</ul>
 		<div class="dropdn-form-wrapper">
 			<h5>Quick Login</h5>
@@ -454,7 +454,7 @@
 		<div class="minicart-drop-content js-dropdn-content-scroll">
 			<div class="minicart-prd row">
 				<div class="minicart-prd-image image-hover-scale-circle col">
-					<a href="{% url "product" %}"><img class="lazyload fade-up" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/static/images/skins/fashion/products/product-01-1.webp" alt=""></a>
+					<a href="{% url "app:product" %}"><img class="lazyload fade-up" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/static/images/skins/fashion/products/product-01-1.webp" alt=""></a>
 				</div>
 				<div class="minicart-prd-info col">
 					<div class="minicart-prd-tag">FOXic</div>
@@ -471,7 +471,7 @@
 			</div>
 			<div class="minicart-prd row">
 				<div class="minicart-prd-image image-hover-scale-circle col">
-					<a href="{% url "product" %}"><img class="lazyload fade-up" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/static/images/skins/fashion/products/product-16-1.webp" alt=""></a>
+					<a href="{% url "app:product" %}"><img class="lazyload fade-up" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/static/images/skins/fashion/products/product-16-1.webp" alt=""></a>
 				</div>
 				<div class="minicart-prd-info col">
 					<div class="minicart-prd-tag">FOXic</div>
@@ -520,8 +520,8 @@
 				<div class="minicart-drop-total-price col" data-header-cart-total="">$340</div>
 			</div>
 			<div class="minicart-drop-actions">
-				<a href="{% url "cart" %}" class="btn btn--md btn--grey"><i class="fa fa-shopping-basket"></i><span>Cart Page</span></a>
-				<a href="{% url "checkout" %}" class="btn btn--md"><i class="fa fa-credit-card"></i><span>Check out</span></a>
+				<a href="{% url "app:cart" %}" class="btn btn--md btn--grey"><i class="fa fa-shopping-basket"></i><span>Cart Page</span></a>
+				<a href="{% url "app:checkout" %}" class="btn btn--md"><i class="fa fa-credit-card"></i><span>Check out</span></a>
 			</div>
 			
 		</div>
@@ -568,7 +568,7 @@
 				<div class="prd prd--style2 prd-labels--max prd-labels-shadow ">
 	<div class="prd-inside">
 		<div class="prd-img-area">
-			<a href="{% url "product" %}" class="prd-img image-container" style="padding-bottom: 100%">
+			<a href="{% url "app:product" %}" class="prd-img image-container" style="padding-bottom: 100%">
 				<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/static/images/skins/cosmetics/products/product-01-1.webp" alt="Perfecting Skin Tint" class="js-prd-img lazyload fade-up">
 					<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/static/images/skins/cosmetics/products/product-01-2.webp" alt="Perfecting Skin Tint" class="js-prd-img lazyload fade-up">
 				<div class="foxic-loader"></div>
@@ -587,7 +587,7 @@
 				</div>
 				<div class="prd-rating justify-content-center"> <i class="fa fa-star checked"></i><i class="fa fa-star checked"></i><i class="fa fa-star checked"></i><i class="fa fa-star checked"></i><i class="fa fa-star checked"></i></div>
 				<div class="prd-tag"><a href="#">FOXic</a></div>
-				<h2 class="prd-title"><a href="{% url "product" %}">Perfecting Skin Tint</a></h2>
+				<h2 class="prd-title"><a href="{% url "app:product" %}">Perfecting Skin Tint</a></h2>
 				<div class="prd-description">
 					Quisque volutpat condimentum velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam nec ante sed lacinia.
 				</div>
@@ -603,7 +603,7 @@
 				<div class="prd-action">
 					<div class="prd-action-left">
 						<form action="#">
-							<button class="btn js-prd-addtocart" data-product='{"name": "Perfecting Skin Tint", "path":"/static/images/skins/cosmetics/products/product-01-1.webp", "url":"{% url "product" %}", "aspect_ratio":0.778}'>Add To Cart</button>
+							<button class="btn js-prd-addtocart" data-product='{"name": "Perfecting Skin Tint", "path":"/static/images/skins/cosmetics/products/product-01-1.webp", "url":"{% url "app:product" %}", "aspect_ratio":0.778}'>Add To Cart</button>
 						</form>
 					</div>
 				</div>
@@ -613,7 +613,7 @@
 </div><div class="prd prd--style2 prd-labels--max prd-labels-shadow ">
 	<div class="prd-inside">
 		<div class="prd-img-area">
-			<a href="{% url "product" %}" class="prd-img image-container" style="padding-bottom: 100%">
+			<a href="{% url "app:product" %}" class="prd-img image-container" style="padding-bottom: 100%">
 				<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/static/images/skins/cosmetics/products/product-02-1.webp" alt="Fatal Glance" class="js-prd-img lazyload fade-up">
 					<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/static/images/skins/cosmetics/products/product-02-2.webp" alt="Fatal Glance" class="js-prd-img lazyload fade-up">
 				<div class="foxic-loader"></div>
@@ -640,7 +640,7 @@
 				</div>
 				<div class="prd-rating justify-content-center"><i class="fa fa-star checked"></i><i class="fa fa-star checked"></i><i class="fa fa-star checked"></i><i class="fa fa-star checked"></i><i class="fa fa-star checked"></i></div>
 				<div class="prd-tag"><a href="#">Seiko</a></div>
-				<h2 class="prd-title"><a href="{% url "product" %}">Fatal Glance</a></h2>
+				<h2 class="prd-title"><a href="{% url "app:product" %}">Fatal Glance</a></h2>
 				<div class="prd-description">
 					Quisque volutpat condimentum velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam nec ante sed lacinia.
 				</div>
@@ -656,7 +656,7 @@
 				<div class="prd-action">
 					<div class="prd-action-left">
 						<form action="#">
-							<button class="btn js-prd-addtocart" data-product='{"name": "Fatal Glance", "path":"/static/images/skins/cosmetics/products/product-02-1.webp", "url":"{% url "product" %}", "aspect_ratio":0.778}'>Add To Cart</button>
+							<button class="btn js-prd-addtocart" data-product='{"name": "Fatal Glance", "path":"/static/images/skins/cosmetics/products/product-02-1.webp", "url":"{% url "app:product" %}", "aspect_ratio":0.778}'>Add To Cart</button>
 						</form>
 					</div>
 				</div>
@@ -666,7 +666,7 @@
 </div><div class="prd prd--style2 prd-labels--max prd-labels-shadow ">
 	<div class="prd-inside">
 		<div class="prd-img-area">
-			<a href="{% url "product" %}" class="prd-img image-container" style="padding-bottom: 100%">
+			<a href="{% url "app:product" %}" class="prd-img image-container" style="padding-bottom: 100%">
 				<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/static/images/skins/cosmetics/products/product-03-1.webp" alt="Cool mascara" class="js-prd-img lazyload fade-up">
 					<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/static/images/skins/cosmetics/products/product-03-2.webp" alt="Cool mascara" class="js-prd-img lazyload fade-up">
 				<div class="foxic-loader"></div>
@@ -695,7 +695,7 @@
 				</div>
 				<div class="prd-rating justify-content-center"><i class="fa fa-star checked"></i><i class="fa fa-star checked"></i><i class="fa fa-star checked"></i><i class="fa fa-star checked"></i><i class="fa fa-star checked"></i></div>
 				<div class="prd-tag"><a href="#">Banita</a></div>
-				<h2 class="prd-title"><a href="{% url "product" %}">Cool mascara</a></h2>
+				<h2 class="prd-title"><a href="{% url "app:product" %}">Cool mascara</a></h2>
 				<div class="prd-description">
 					Quisque volutpat condimentum velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam nec ante sed lacinia.
 				</div>
@@ -712,7 +712,7 @@
 				<div class="prd-action">
 					<div class="prd-action-left">
 						<form action="#">
-							<button class="btn js-prd-addtocart" data-product='{"name": "Cool mascara", "path":"/static/images/skins/cosmetics/products/product-03-1.webp", "url":"{% url "product" %}", "aspect_ratio":0.778}'>Add To Cart</button>
+							<button class="btn js-prd-addtocart" data-product='{"name": "Cool mascara", "path":"/static/images/skins/cosmetics/products/product-03-1.webp", "url":"{% url "app:product" %}", "aspect_ratio":0.778}'>Add To Cart</button>
 						</form>
 					</div>
 				</div>
@@ -722,7 +722,7 @@
 </div><div class="prd prd--style2 prd-labels--max prd-labels-shadow ">
 	<div class="prd-inside">
 		<div class="prd-img-area">
-			<a href="{% url "product" %}" class="prd-img image-container" style="padding-bottom: 100%">
+			<a href="{% url "app:product" %}" class="prd-img image-container" style="padding-bottom: 100%">
 				<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/static/images/skins/cosmetics/products/product-04-1.webp" alt="Fiona may" class="js-prd-img lazyload fade-up">
 					<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/static/images/skins/cosmetics/products/product-04-2.webp" alt="Fiona may" class="js-prd-img lazyload fade-up">
 				<div class="foxic-loader"></div>
@@ -745,7 +745,7 @@
 				</div>
 				<div class="prd-rating justify-content-center"><i class="fa fa-star checked"></i><i class="fa fa-star checked"></i><i class="fa fa-star checked"></i><i class="fa fa-star checked"></i><i class="fa fa-star checked"></i></div>
 				<div class="prd-tag"><a href="#">Bigsteps</a></div>
-				<h2 class="prd-title"><a href="{% url "product" %}">Fiona may</a></h2>
+				<h2 class="prd-title"><a href="{% url "app:product" %}">Fiona may</a></h2>
 				<div class="prd-description">
 					Quisque volutpat condimentum velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam nec ante sed lacinia.
 				</div>
@@ -761,7 +761,7 @@
 				<div class="prd-action">
 					<div class="prd-action-left">
 						<form action="#">
-							<button class="btn js-prd-addtocart" data-product='{"name": "Fiona may", "path":"/static/images/skins/cosmetics/products/product-04-1.webp", "url":"{% url "product" %}", "aspect_ratio":0.778}'>Add To Cart</button>
+							<button class="btn js-prd-addtocart" data-product='{"name": "Fiona may", "path":"/static/images/skins/cosmetics/products/product-04-1.webp", "url":"{% url "app:product" %}", "aspect_ratio":0.778}'>Add To Cart</button>
 						</form>
 					</div>
 				</div>
@@ -771,7 +771,7 @@
 </div><div class="prd prd--style2 prd-labels--max prd-labels-shadow ">
 	<div class="prd-inside">
 		<div class="prd-img-area">
-			<a href="{% url "product" %}" class="prd-img image-container" style="padding-bottom: 100%">
+			<a href="{% url "app:product" %}" class="prd-img image-container" style="padding-bottom: 100%">
 				<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/static/images/skins/cosmetics/products/product-05-1.webp" alt="Lipstick light" class="js-prd-img lazyload fade-up">
 					<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/static/images/skins/cosmetics/products/product-05-2.webp" alt="Lipstick light" class="js-prd-img lazyload fade-up">
 				<div class="foxic-loader"></div>
@@ -794,7 +794,7 @@
 				</div>
 				<div class="prd-rating justify-content-center"><i class="fa fa-star checked"></i><i class="fa fa-star checked"></i><i class="fa fa-star checked"></i><i class="fa fa-star checked"></i><i class="fa fa-star checked"></i></div>
 				<div class="prd-tag"><a href="#">FOXic</a></div>
-				<h2 class="prd-title"><a href="{% url "product" %}">Lipstick light</a></h2>
+				<h2 class="prd-title"><a href="{% url "app:product" %}">Lipstick light</a></h2>
 				<div class="prd-description">
 					Quisque volutpat condimentum velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam nec ante sed lacinia.
 				</div>
@@ -810,7 +810,7 @@
 				<div class="prd-action">
 					<div class="prd-action-left">
 						<form action="#">
-							<button class="btn js-prd-addtocart" data-product='{"name": "Lipstick light", "path":"/static/images/skins/cosmetics/products/product-05-1.webp", "url":"{% url "product" %}", "aspect_ratio":0.778}'>Add To Cart</button>
+							<button class="btn js-prd-addtocart" data-product='{"name": "Lipstick light", "path":"/static/images/skins/cosmetics/products/product-05-1.webp", "url":"{% url "app:product" %}", "aspect_ratio":0.778}'>Add To Cart</button>
 						</form>
 					</div>
 				</div>
@@ -820,7 +820,7 @@
 </div><div class="prd prd--style2 prd-labels--max prd-labels-shadow ">
 	<div class="prd-inside">
 		<div class="prd-img-area">
-			<a href="{% url "product" %}" class="prd-img image-container" style="padding-bottom: 100%">
+			<a href="{% url "app:product" %}" class="prd-img image-container" style="padding-bottom: 100%">
 				<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/static/images/skins/cosmetics/products/product-06-1.webp" alt="Precision Eyeliner" class="js-prd-img lazyload fade-up">
 					<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/static/images/skins/cosmetics/products/product-06-2.webp" alt="Precision Eyeliner" class="js-prd-img lazyload fade-up">
 				<div class="foxic-loader"></div>
@@ -851,7 +851,7 @@
 				</div>
 				<div class="prd-rating justify-content-center"><i class="fa fa-star checked"></i><i class="fa fa-star checked"></i><i class="fa fa-star checked"></i><i class="fa fa-star checked"></i><i class="fa fa-star checked"></i></div>
 				<div class="prd-tag"><a href="#">Seiko</a></div>
-				<h2 class="prd-title"><a href="{% url "product" %}">Precision Eyeliner</a></h2>
+				<h2 class="prd-title"><a href="{% url "app:product" %}">Precision Eyeliner</a></h2>
 				<div class="prd-description">
 					Quisque volutpat condimentum velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam nec ante sed lacinia.
 				</div>
@@ -867,7 +867,7 @@
 				<div class="prd-action">
 					<div class="prd-action-left">
 						<form action="#">
-							<button class="btn js-prd-addtocart" data-product='{"name": "Precision Eyeliner", "path":"/static/images/skins/cosmetics/products/product-06-1.webp", "url":"{% url "product" %}", "aspect_ratio":0.778}'>Add To Cart</button>
+							<button class="btn js-prd-addtocart" data-product='{"name": "Precision Eyeliner", "path":"/static/images/skins/cosmetics/products/product-06-1.webp", "url":"{% url "app:product" %}", "aspect_ratio":0.778}'>Add To Cart</button>
 						</form>
 					</div>
 				</div>
@@ -877,7 +877,7 @@
 </div><div class="prd prd--style2 prd-labels--max prd-labels-shadow prd-outstock">
 	<div class="prd-inside">
 		<div class="prd-img-area">
-			<a href="{% url "product" %}" class="prd-img image-container" style="padding-bottom: 100%">
+			<a href="{% url "app:product" %}" class="prd-img image-container" style="padding-bottom: 100%">
 				<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/static/images/skins/cosmetics/products/product-07-1.webp" alt="Lipstick" class="js-prd-img lazyload fade-up">
 				<div class="foxic-loader"></div>
 				<div class="prd-big-circle-labels">
@@ -899,7 +899,7 @@
 				</div>
 				<div class="prd-rating justify-content-center"><i class="fa fa-star checked"></i><i class="fa fa-star checked"></i><i class="fa fa-star checked"></i><i class="fa fa-star checked"></i><i class="fa fa-star checked"></i></div>
 				<div class="prd-tag"><a href="#">Banita</a></div>
-				<h2 class="prd-title"><a href="{% url "product" %}">Lipstick</a></h2>
+				<h2 class="prd-title"><a href="{% url "app:product" %}">Lipstick</a></h2>
 				<div class="prd-description">
 					Quisque volutpat condimentum velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam nec ante sed lacinia.
 				</div>
@@ -915,7 +915,7 @@
 				<div class="prd-action">
 					<div class="prd-action-left">
 						<form action="#">
-							<button class="btn js-prd-addtocart" data-product='{"name": "Lipstick", "path":"/static/images/skins/cosmetics/products/product-07-1.webp", "url":"{% url "product" %}", "aspect_ratio":0.778}'>Add To Cart</button>
+							<button class="btn js-prd-addtocart" data-product='{"name": "Lipstick", "path":"/static/images/skins/cosmetics/products/product-07-1.webp", "url":"{% url "app:product" %}", "aspect_ratio":0.778}'>Add To Cart</button>
 						</form>
 					</div>
 				</div>
@@ -925,7 +925,7 @@
 </div><div class="prd prd--style2 prd-labels--max prd-labels-shadow ">
 	<div class="prd-inside">
 		<div class="prd-img-area">
-			<a href="{% url "product" %}" class="prd-img image-container" style="padding-bottom: 100%">
+			<a href="{% url "app:product" %}" class="prd-img image-container" style="padding-bottom: 100%">
 				<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/static/images/skins/cosmetics/products/product-08-1.webp" alt="Eye Lash Curler" class="js-prd-img lazyload fade-up">
 					<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/static/images/skins/cosmetics/products/product-08-2.webp" alt="Eye Lash Curler" class="js-prd-img lazyload fade-up">
 				<div class="foxic-loader"></div>
@@ -953,7 +953,7 @@
 				</div>
 				<div class="prd-rating justify-content-center"><i class="fa fa-star checked"></i><i class="fa fa-star checked"></i><i class="fa fa-star checked"></i><i class="fa fa-star checked"></i><i class="fa fa-star checked"></i></div>
 				<div class="prd-tag"><a href="#">FOXic</a></div>
-				<h2 class="prd-title"><a href="{% url "product" %}">Eye Lash Curler</a></h2>
+				<h2 class="prd-title"><a href="{% url "app:product" %}">Eye Lash Curler</a></h2>
 				<div class="prd-description">
 					Quisque volutpat condimentum velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam nec ante sed lacinia.
 				</div>
@@ -970,7 +970,7 @@
 				<div class="prd-action">
 					<div class="prd-action-left">
 						<form action="#">
-							<button class="btn js-prd-addtocart" data-product='{"name": "Eye Lash Curler", "path":"/static/images/skins/cosmetics/products/product-08-1.webp", "url":"{% url "product" %}", "aspect_ratio":0.778}'>Add To Cart</button>
+							<button class="btn js-prd-addtocart" data-product='{"name": "Eye Lash Curler", "path":"/static/images/skins/cosmetics/products/product-08-1.webp", "url":"{% url "app:product" %}", "aspect_ratio":0.778}'>Add To Cart</button>
 						</form>
 					</div>
 				</div>
@@ -1044,7 +1044,7 @@
 	<div class="container">
 		<div class="row bnr-grid vert-margin-small">
 			<div class="col-18 col-sm-6">
-				<a href="{% url "product" %}" class="bnr-wrap">
+				<a href="{% url "app:product" %}" class="bnr-wrap">
 					<div class="bnr custom-caption image-hover-scale bnr--bottom bnr--left " data-fontratio=5.7>
 						<div class="bnr-img  image-container" style="padding-bottom: 145.02%">
 							<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-srcset="/static/images/skins/cosmetics/banners/banner-cosmetics-01.webp" class="lazyload fade-up" alt="">
@@ -1058,7 +1058,7 @@
 				</a>
 			</div>
 			<div class="col-18 col-sm-6">
-				<a href="{% url "product" %}" class="bnr-wrap">
+				<a href="{% url "app:product" %}" class="bnr-wrap">
 					<div class="bnr custom-caption image-hover-scale bnr--bottom bnr--center " data-fontratio=5.7>
 						<div class="bnr-img  image-container" style="padding-bottom: 145.02%">
 							<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-srcset="/static/images/skins/cosmetics/banners/banner-cosmetics-02.webp" class="lazyload fade-up" alt=""></div>
@@ -1070,7 +1070,7 @@
 				</a>
 			</div>
 			<div class="col-18 col-sm-6">
-				<a href="{% url "product" %}" class="bnr-wrap">
+				<a href="{% url "app:product" %}" class="bnr-wrap">
 					<div class="bnr custom-caption image-hover-scale bnr--middle bnr--center " data-fontratio=5.7>
 						<div class="bnr-img  image-container" style="padding-bottom: 145.02%">
 							<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-srcset="/static/images/skins/cosmetics/banners/banner-cosmetics-03.webp" class="lazyload fade-up" alt=""></div>
@@ -1102,7 +1102,7 @@
 			<div class="prd prd--style2 prd-labels--max prd-labels-shadow ">
 	<div class="prd-inside">
 		<div class="prd-img-area">
-			<a href="{% url "product" %}" class="prd-img image-container" style="padding-bottom: 100%">
+			<a href="{% url "app:product" %}" class="prd-img image-container" style="padding-bottom: 100%">
 				<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/static/images/skins/cosmetics/products/product-09-1.webp" alt="Love & Love" class="js-prd-img lazyload fade-up">
 					<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/static/images/skins/cosmetics/products/product-09-2.webp" alt="Love & Love" class="js-prd-img lazyload fade-up">
 				<div class="foxic-loader"></div>
@@ -1131,7 +1131,7 @@
 				</div>
 				<div class="prd-rating justify-content-center"><i class="fa fa-star checked"></i><i class="fa fa-star checked"></i><i class="fa fa-star checked"></i><i class="fa fa-star checked"></i><i class="fa fa-star checked"></i></div>
 				<div class="prd-tag"><a href="#">FOXic</a></div>
-				<h2 class="prd-title"><a href="{% url "product" %}">Love & Love</a></h2>
+				<h2 class="prd-title"><a href="{% url "app:product" %}">Love & Love</a></h2>
 				<div class="prd-description">
 					Quisque volutpat condimentum velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam nec ante sed lacinia.
 				</div>
@@ -1148,7 +1148,7 @@
 				<div class="prd-action">
 					<div class="prd-action-left">
 						<form action="#">
-							<button class="btn js-prd-addtocart" data-product='{"name": "Love & Love", "path":"/static/images/skins/cosmetics/products/product-09-1.webp", "url":"{% url "product" %}", "aspect_ratio":0.778}'>Add To Cart</button>
+							<button class="btn js-prd-addtocart" data-product='{"name": "Love & Love", "path":"/static/images/skins/cosmetics/products/product-09-1.webp", "url":"{% url "app:product" %}", "aspect_ratio":0.778}'>Add To Cart</button>
 						</form>
 					</div>
 				</div>
@@ -1158,7 +1158,7 @@
 </div><div class="prd prd--style2 prd-labels--max prd-labels-shadow ">
 	<div class="prd-inside">
 		<div class="prd-img-area">
-			<a href="{% url "product" %}" class="prd-img image-container" style="padding-bottom: 100%">
+			<a href="{% url "app:product" %}" class="prd-img image-container" style="padding-bottom: 100%">
 				<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/static/images/skins/cosmetics/products/product-10-1.webp" alt="Fiona may" class="js-prd-img lazyload fade-up">
 					<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/static/images/skins/cosmetics/products/product-10-2.webp" alt="Fiona may" class="js-prd-img lazyload fade-up">
 				<div class="foxic-loader"></div>
@@ -1186,7 +1186,7 @@
 				</div>
 				<div class="prd-rating justify-content-center"><i class="fa fa-star checked"></i><i class="fa fa-star checked"></i><i class="fa fa-star checked"></i><i class="fa fa-star checked"></i><i class="fa fa-star checked"></i></div>
 				<div class="prd-tag"><a href="#">FOXic</a></div>
-				<h2 class="prd-title"><a href="{% url "product" %}">Fiona may</a></h2>
+				<h2 class="prd-title"><a href="{% url "app:product" %}">Fiona may</a></h2>
 				<div class="prd-description">
 					Quisque volutpat condimentum velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam nec ante sed lacinia.
 				</div>
@@ -1203,7 +1203,7 @@
 				<div class="prd-action">
 					<div class="prd-action-left">
 						<form action="#">
-							<button class="btn js-prd-addtocart" data-product='{"name": "Fiona may", "path":"/static/images/skins/cosmetics/products/product-10-1.webp", "url":"{% url "product" %}", "aspect_ratio":0.778}'>Add To Cart</button>
+							<button class="btn js-prd-addtocart" data-product='{"name": "Fiona may", "path":"/static/images/skins/cosmetics/products/product-10-1.webp", "url":"{% url "app:product" %}", "aspect_ratio":0.778}'>Add To Cart</button>
 						</form>
 					</div>
 				</div>
@@ -1213,7 +1213,7 @@
 </div><div class="prd prd--style2 prd-labels--max prd-labels-shadow ">
 	<div class="prd-inside">
 		<div class="prd-img-area">
-			<a href="{% url "product" %}" class="prd-img image-container" style="padding-bottom: 100%">
+			<a href="{% url "app:product" %}" class="prd-img image-container" style="padding-bottom: 100%">
 				<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/static/images/skins/cosmetics/products/product-11-1.webp" alt="Color Drops" class="js-prd-img lazyload fade-up">
 					<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/static/images/skins/cosmetics/products/product-11-2.webp" alt="Color Drops" class="js-prd-img lazyload fade-up">
 				<div class="foxic-loader"></div>
@@ -1241,7 +1241,7 @@
 				</div>
 				<div class="prd-rating justify-content-center"><i class="fa fa-star checked"></i><i class="fa fa-star checked"></i><i class="fa fa-star checked"></i><i class="fa fa-star checked"></i><i class="fa fa-star checked"></i></div>
 				<div class="prd-tag"><a href="#">FOXic</a></div>
-				<h2 class="prd-title"><a href="{% url "product" %}">Color Drops</a></h2>
+				<h2 class="prd-title"><a href="{% url "app:product" %}">Color Drops</a></h2>
 				<div class="prd-description">
 					Quisque volutpat condimentum velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam nec ante sed lacinia.
 				</div>
@@ -1258,7 +1258,7 @@
 				<div class="prd-action">
 					<div class="prd-action-left">
 						<form action="#">
-							<button class="btn js-prd-addtocart" data-product='{"name": "Color Drops", "path":"/static/images/skins/cosmetics/products/product-11-1.webp", "url":"{% url "product" %}", "aspect_ratio":0.778}'>Add To Cart</button>
+							<button class="btn js-prd-addtocart" data-product='{"name": "Color Drops", "path":"/static/images/skins/cosmetics/products/product-11-1.webp", "url":"{% url "app:product" %}", "aspect_ratio":0.778}'>Add To Cart</button>
 						</form>
 					</div>
 				</div>
@@ -1268,7 +1268,7 @@
 </div><div class="prd prd--style2 prd-labels--max prd-labels-shadow ">
 	<div class="prd-inside">
 		<div class="prd-img-area">
-			<a href="{% url "product" %}" class="prd-img image-container" style="padding-bottom: 100%">
+			<a href="{% url "app:product" %}" class="prd-img image-container" style="padding-bottom: 100%">
 				<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/static/images/skins/cosmetics/products/product-12-1.webp" alt="Something interesting" class="js-prd-img lazyload fade-up">
 					<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/static/images/skins/cosmetics/products/product-12-2.webp" alt="Something interesting" class="js-prd-img lazyload fade-up">
 				<div class="foxic-loader"></div>
@@ -1296,7 +1296,7 @@
 				</div>
 				<div class="prd-rating justify-content-center"><i class="fa fa-star checked"></i><i class="fa fa-star checked"></i><i class="fa fa-star checked"></i><i class="fa fa-star checked"></i><i class="fa fa-star checked"></i></div>
 				<div class="prd-tag"><a href="#">FOXic</a></div>
-				<h2 class="prd-title"><a href="{% url "product" %}">Something interesting</a></h2>
+				<h2 class="prd-title"><a href="{% url "app:product" %}">Something interesting</a></h2>
 				<div class="prd-description">
 					Quisque volutpat condimentum velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam nec ante sed lacinia.
 				</div>
@@ -1313,7 +1313,7 @@
 				<div class="prd-action">
 					<div class="prd-action-left">
 						<form action="#">
-							<button class="btn js-prd-addtocart" data-product='{"name": "Something interesting", "path":"/static/images/skins/cosmetics/products/product-12-1.webp", "url":"{% url "product" %}", "aspect_ratio":0.778}'>Add To Cart</button>
+							<button class="btn js-prd-addtocart" data-product='{"name": "Something interesting", "path":"/static/images/skins/cosmetics/products/product-12-1.webp", "url":"{% url "app:product" %}", "aspect_ratio":0.778}'>Add To Cart</button>
 						</form>
 					</div>
 				</div>
@@ -1323,7 +1323,7 @@
 </div><div class="prd prd--style2 prd-labels--max prd-labels-shadow ">
 	<div class="prd-inside">
 		<div class="prd-img-area">
-			<a href="{% url "product" %}" class="prd-img image-container" style="padding-bottom: 100%">
+			<a href="{% url "app:product" %}" class="prd-img image-container" style="padding-bottom: 100%">
 				<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/static/images/skins/cosmetics/products/product-13-1.webp" alt="Lip Scrub" class="js-prd-img lazyload fade-up">
 					<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/static/images/skins/cosmetics/products/product-13-2.webp" alt="Lip Scrub" class="js-prd-img lazyload fade-up">
 				<div class="foxic-loader"></div>
@@ -1352,7 +1352,7 @@
 				</div>
 				<div class="prd-rating justify-content-center"><i class="fa fa-star checked"></i><i class="fa fa-star checked"></i><i class="fa fa-star checked"></i><i class="fa fa-star checked"></i><i class="fa fa-star checked"></i></div>
 				<div class="prd-tag"><a href="#">FOXic</a></div>
-				<h2 class="prd-title"><a href="{% url "product" %}">Lip Scrub</a></h2>
+				<h2 class="prd-title"><a href="{% url "app:product" %}">Lip Scrub</a></h2>
 				<div class="prd-description">
 					Quisque volutpat condimentum velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam nec ante sed lacinia.
 				</div>
@@ -1369,7 +1369,7 @@
 				<div class="prd-action">
 					<div class="prd-action-left">
 						<form action="#">
-							<button class="btn js-prd-addtocart" data-product='{"name": "Lip Scrub", "path":"/static/images/skins/cosmetics/products/product-13-1.webp", "url":"{% url "product" %}", "aspect_ratio":0.778}'>Add To Cart</button>
+							<button class="btn js-prd-addtocart" data-product='{"name": "Lip Scrub", "path":"/static/images/skins/cosmetics/products/product-13-1.webp", "url":"{% url "app:product" %}", "aspect_ratio":0.778}'>Add To Cart</button>
 						</form>
 					</div>
 				</div>
@@ -1379,7 +1379,7 @@
 </div><div class="prd prd--style2 prd-labels--max prd-labels-shadow ">
 	<div class="prd-inside">
 		<div class="prd-img-area">
-			<a href="{% url "product" %}" class="prd-img image-container" style="padding-bottom: 100%">
+			<a href="{% url "app:product" %}" class="prd-img image-container" style="padding-bottom: 100%">
 				<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/static/images/skins/cosmetics/products/product-14-1.webp" alt="Break Rules" class="js-prd-img lazyload fade-up">
 					<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/static/images/skins/cosmetics/products/product-14-2.webp" alt="Break Rules" class="js-prd-img lazyload fade-up">
 				<div class="foxic-loader"></div>
@@ -1408,7 +1408,7 @@
 				</div>
 				<div class="prd-rating justify-content-center"><i class="fa fa-star checked"></i><i class="fa fa-star checked"></i><i class="fa fa-star checked"></i><i class="fa fa-star checked"></i><i class="fa fa-star checked"></i></div>
 				<div class="prd-tag"><a href="#">FOXic</a></div>
-				<h2 class="prd-title"><a href="{% url "product" %}">Break Rules</a></h2>
+				<h2 class="prd-title"><a href="{% url "app:product" %}">Break Rules</a></h2>
 				<div class="prd-description">
 					Quisque volutpat condimentum velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam nec ante sed lacinia.
 				</div>
@@ -1425,7 +1425,7 @@
 				<div class="prd-action">
 					<div class="prd-action-left">
 						<form action="#">
-							<button class="btn js-prd-addtocart" data-product='{"name": "Break Rules", "path":"/static/images/skins/cosmetics/products/product-14-1.webp", "url":"{% url "product" %}", "aspect_ratio":0.778}'>Add To Cart</button>
+							<button class="btn js-prd-addtocart" data-product='{"name": "Break Rules", "path":"/static/images/skins/cosmetics/products/product-14-1.webp", "url":"{% url "app:product" %}", "aspect_ratio":0.778}'>Add To Cart</button>
 						</form>
 					</div>
 				</div>
@@ -1435,7 +1435,7 @@
 </div><div class="prd prd--style2 prd-labels--max prd-labels-shadow ">
 	<div class="prd-inside">
 		<div class="prd-img-area">
-			<a href="{% url "product" %}" class="prd-img image-container" style="padding-bottom: 100%">
+			<a href="{% url "app:product" %}" class="prd-img image-container" style="padding-bottom: 100%">
 				<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/static/images/skins/cosmetics/products/product-15-1.webp" alt="The Dreamer" class="js-prd-img lazyload fade-up">
 					<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/static/images/skins/cosmetics/products/product-15-2.webp" alt="The Dreamer" class="js-prd-img lazyload fade-up">
 				<div class="foxic-loader"></div>
@@ -1460,7 +1460,7 @@
 				</div>
 				<div class="prd-rating justify-content-center"><i class="fa fa-star checked"></i><i class="fa fa-star checked"></i><i class="fa fa-star checked"></i><i class="fa fa-star checked"></i><i class="fa fa-star checked"></i></div>
 				<div class="prd-tag"><a href="#">FOXic</a></div>
-				<h2 class="prd-title"><a href="{% url "product" %}">The Dreamer</a></h2>
+				<h2 class="prd-title"><a href="{% url "app:product" %}">The Dreamer</a></h2>
 				<div class="prd-description">
 					Quisque volutpat condimentum velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam nec ante sed lacinia.
 				</div>
@@ -1477,7 +1477,7 @@
 				<div class="prd-action">
 					<div class="prd-action-left">
 						<form action="#">
-							<button class="btn js-prd-addtocart" data-product='{"name": "The Dreamer", "path":"/static/images/skins/cosmetics/products/product-15-1.webp", "url":"{% url "product" %}", "aspect_ratio":0.778}'>Add To Cart</button>
+							<button class="btn js-prd-addtocart" data-product='{"name": "The Dreamer", "path":"/static/images/skins/cosmetics/products/product-15-1.webp", "url":"{% url "app:product" %}", "aspect_ratio":0.778}'>Add To Cart</button>
 						</form>
 					</div>
 				</div>
@@ -1487,7 +1487,7 @@
 </div><div class="prd prd--style2 prd-labels--max prd-labels-shadow ">
 	<div class="prd-inside">
 		<div class="prd-img-area">
-			<a href="{% url "product" %}" class="prd-img image-container" style="padding-bottom: 100%">
+			<a href="{% url "app:product" %}" class="prd-img image-container" style="padding-bottom: 100%">
 				<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/static/images/skins/cosmetics/products/product-16-1.webp" alt="Savage Life" class="js-prd-img lazyload fade-up">
 					<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/static/images/skins/cosmetics/products/product-16-2.webp" alt="Savage Life" class="js-prd-img lazyload fade-up">
 				<div class="foxic-loader"></div>
@@ -1515,7 +1515,7 @@
 				</div>
 				<div class="prd-rating justify-content-center"><i class="fa fa-star checked"></i><i class="fa fa-star checked"></i><i class="fa fa-star checked"></i><i class="fa fa-star checked"></i><i class="fa fa-star checked"></i></div>
 				<div class="prd-tag"><a href="#">FOXic</a></div>
-				<h2 class="prd-title"><a href="{% url "product" %}">Savage Life</a></h2>
+				<h2 class="prd-title"><a href="{% url "app:product" %}">Savage Life</a></h2>
 				<div class="prd-description">
 					Quisque volutpat condimentum velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam nec ante sed lacinia.
 				</div>
@@ -1532,7 +1532,7 @@
 				<div class="prd-action">
 					<div class="prd-action-left">
 						<form action="#">
-							<button class="btn js-prd-addtocart" data-product='{"name": "Savage Life", "path":"/static/images/skins/cosmetics/products/product-16-1.webp", "url":"{% url "product" %}", "aspect_ratio":0.778}'>Add To Cart</button>
+							<button class="btn js-prd-addtocart" data-product='{"name": "Savage Life", "path":"/static/images/skins/cosmetics/products/product-16-1.webp", "url":"{% url "app:product" %}", "aspect_ratio":0.778}'>Add To Cart</button>
 						</form>
 					</div>
 				</div>
@@ -1616,7 +1616,7 @@
 					<div class="footer-block">
 						<ul class="footer-list-inline">
 	<li><a href="account-details.html">My Account</a></li>
-	<li><a href="{% url "cart" %}">View Cart</a></li>
+	<li><a href="{% url "app:cart" %}">View Cart</a></li>
 	<li><a href="account-wishlist.html">My Wishlist</a></li>
 	<li><a href="account-history.html">Order Status</a></li>
 	<li><a href="account-history.html">Track My Order</a></li>
@@ -1672,7 +1672,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-auto sticky-addcart_image">
-					<a href="{% url "product" %}">
+					<a href="{% url "app:product" %}">
 						<img src="/static/images/skins/fashion/products/product-01-1.webp" alt=""/>
 					</a>
 				</div>
@@ -1717,20 +1717,20 @@
 				</div>
 				<div class="col popup-addedtocart_info">
 					<div class="row">
-						<a href="{% url "product" %}" class="col-auto popup-addedtocart_image">
+						<a href="{% url "app:product" %}" class="col-auto popup-addedtocart_image">
 							<span class="image-container w-100">
 								<img src="/static/images/skins/fashion/products/product-01-1.webp" alt=""/>
 							</span>
 						</a>
 						<div class="col popup-addedtocart_text">
-							<a href="{% url "product" %}" class="popup-addedtocart_title"></a>
-							<span class="popup-addedtocart_message">Added to <a href="{% url "cart" %}" class="underline">Cart</a></span>
+							<a href="{% url "app:product" %}" class="popup-addedtocart_title"></a>
+							<span class="popup-addedtocart_message">Added to <a href="{% url "app:cart" %}" class="underline">Cart</a></span>
 							<span class="popup-addedtocart_error_message"></span>
 						</div>
 					</div>
 				</div>
 				<div class="col-auto popup-addedtocart_actions">
-					<span>You can continue</span> <a href="{% url "cart" %}" class="btn btn--grey btn--sm js-open-drop" data-panel="#dropdnMinicart"><i class="fa fa-shopping-basket"></i><span>Check Cart</span></a> <span>or</span> <a href="{% url "checkout" %}" class="btn btn--invert btn--sm"><i class="fa fa-credit-card"></i><span>Check out</span></a>
+					<span>You can continue</span> <a href="{% url "app:cart" %}" class="btn btn--grey btn--sm js-open-drop" data-panel="#dropdnMinicart"><i class="fa fa-shopping-basket"></i><span>Check Cart</span></a> <span>or</span> <a href="{% url "app:checkout" %}" class="btn btn--invert btn--sm"><i class="fa fa-credit-card"></i><span>Check out</span></a>
 				</div>
 			</div>
 		</div>
@@ -1788,7 +1788,7 @@
 <div class="footer-sticky">
 	<div class="payment-notification-wrap js-pn" data-visible-time="3000" data-hidden-time="3000" data-delay="500"
 		 data-from="Aberdeen,Bakersfield,Birmingham,Cambridge,Youngstown"
-		 data-products='[{"productname":"Leather Pegged Pants", "productlink":"{% url "product" %}","productimage":"/static/images/skins/fashion/products/product-01-1.webp"},{"productname":"Black Fabric Backpack", "productlink":"{% url "product" %}","productimage":"/static/images/skins/fashion/products/product-28-1.webp"},{"productname":"Combined Chunky Sneakers", "productlink":"{% url "product" %}","productimage":"/static/images/skins/fashion/products/product-23-1.webp"}]'>
+		 data-products='[{"productname":"Leather Pegged Pants", "productlink":"{% url "app:product" %}","productimage":"/static/images/skins/fashion/products/product-01-1.webp"},{"productname":"Black Fabric Backpack", "productlink":"{% url "app:product" %}","productimage":"/static/images/skins/fashion/products/product-28-1.webp"},{"productname":"Combined Chunky Sneakers", "productlink":"{% url "app:product" %}","productimage":"/static/images/skins/fashion/products/product-23-1.webp"}]'>
 		<div class="payment-notification payment-notification--squared">
 			<div class="payment-notification-inside">
 				<div class="payment-notification-container">
@@ -1798,7 +1798,7 @@
 					<div class="payment-notification-content-wrapper">
 						<div class="payment-notification-content">
 							<div class="payment-notification-text">Someone purchased</div>
-							<a href="{% url "product" %}" class="payment-notification-name js-pn-name js-pn-link">Applewatch</a>
+							<a href="{% url "app:product" %}" class="payment-notification-name js-pn-name js-pn-link">Applewatch</a>
 							<div class="payment-notification-bottom">
 								<div class="payment-notification-when"><span class="js-pn-time">32</span> min ago</div>
 								<div class="payment-notification-from">from <span class="js-pn-from">Riverside</span></div>

@@ -151,21 +151,21 @@
 					</div>
 					<div class="hdr-nav hide-mobile nav-holder justify-content-center px-4">
 <ul class="mmenu mmenu-js">
-	<li class="mmenu-item--simple"><a href="{% url "index" %}" class="active">Home</a>
+	<li class="mmenu-item--simple"><a href="{% url "app:index" %}" class="active">Home</a>
 		
 	</li>
 	<li class="mmenu-item--simple"><a href="#">Pages</a>
 		<div class="mmenu-submenu">
 			<ul class="submenu-list">
-	<li><a href="{% url "product" %}">Product page</a>
+	<li><a href="{% url "app:product" %}">Product page</a>
 		
 	</li>
-	<li><a href="{% url "category" %}">Category page</a>
+	<li><a href="{% url "app:category" %}">Category page</a>
 		
 	</li>
-	<li><a href="{% url "cart" %}">Cart & Checkout</a>
+	<li><a href="{% url "app:cart" %}">Cart & Checkout</a>
 		<ul>
-			<li><a href="{% url "cart" %}">Cart Page</a></li>
+			<li><a href="{% url "app:cart" %}">Cart Page</a></li>
 			<li><a href="cart-empty.html">Empty cart</a></li>
 			<li><a href="checkout.html">Checkout variant 1</a></li>
 			<li><a href="checkout-2.html">Checkout variant 2</a></li>
@@ -193,8 +193,8 @@
 </ul>
 		</div>
 	</li>
-	<li><a href="{% url "category" %}">Accessories<span class="menu-label">SALE</span></a></li>
-	<li class="mmenu-item--mega"><a href="{% url "category" %}">Men</a>
+	<li><a href="{% url "app:category" %}">Accessories<span class="menu-label">SALE</span></a></li>
+	<li class="mmenu-item--mega"><a href="{% url "app:category" %}">Men</a>
 		<div class="mmenu-submenu mmenu-submenu--has-bottom">
 			<div class="mmenu-submenu-inside">
 				<div class="container">
@@ -202,64 +202,64 @@
 						<div class="mmenu-bnr-wrap">
 							<a href="#" class="image-hover-scale"><img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-srcset="/static/images/menu/mmenu-bnr-01.webp" class="lazyload fade-up" alt=""></a>
 						</div>
-						<h3 class="submenu-title"><a href="{% url "category" %}">Pre-Collection<br>Spring-Summer 2021</a></h3>
+						<h3 class="submenu-title"><a href="{% url "app:category" %}">Pre-Collection<br>Spring-Summer 2021</a></h3>
 					</div>
 					<div class="mmenu-cols column-4">
 						<div class="mmenu-col">
-							<h3 class="submenu-title"><a href="{% url "category" %}">Collections</a></h3>
+							<h3 class="submenu-title"><a href="{% url "app:category" %}">Collections</a></h3>
 							<ul class="submenu-list">
-								<li><a href="{% url "category" %}">Martins d'Art 2020/21<span class="submenu-link-txt">Available in boutiques from June 2019</span></a></li>
-								<li><a href="{% url "category" %}">Spring-Summer 2021<span class="submenu-link-txt">Available in boutiques from March 2019</span></a></li>
-								<li><a href="{% url "category" %}">Spring-Summer 2021 Pre-Collection<span class="submenu-link-txt">In boutiques</span></a></li>
-								<li><a href="{% url "category" %}">Cruise 2020/21<span class="submenu-link-txt">In boutiques</span></a></li>
-								<li><a href="{% url "category" %}">Fall-Winter 2020/21</a></li>
+								<li><a href="{% url "app:category" %}">Martins d'Art 2020/21<span class="submenu-link-txt">Available in boutiques from June 2019</span></a></li>
+								<li><a href="{% url "app:category" %}">Spring-Summer 2021<span class="submenu-link-txt">Available in boutiques from March 2019</span></a></li>
+								<li><a href="{% url "app:category" %}">Spring-Summer 2021 Pre-Collection<span class="submenu-link-txt">In boutiques</span></a></li>
+								<li><a href="{% url "app:category" %}">Cruise 2020/21<span class="submenu-link-txt">In boutiques</span></a></li>
+								<li><a href="{% url "app:category" %}">Fall-Winter 2020/21</a></li>
 							</ul>
 						</div>
 						<div class="mmenu-col">
-							<h3 class="submenu-title"><a href="{% url "category" %}">Ready-to-wear</a></h3>
+							<h3 class="submenu-title"><a href="{% url "app:category" %}">Ready-to-wear</a></h3>
 							<ul class="submenu-list">
-								<li><a href="{% url "category" %}" class="active">Jackets</a>
+								<li><a href="{% url "app:category" %}" class="active">Jackets</a>
 									<ul class="sub-level">
-										<li><a href="{% url "category" %}">Bomber Jackets</a></li>
-										<li><a href="{% url "category" %}">Biker Jacket</a></li>
-										<li><a href="{% url "category" %}">Trucker Jacket</a></li>
-										<li><a href="{% url "category" %}">Denim Jackets</a></li>
-										<li><a href="{% url "category" %}">Blouson Jacket<span class="menu-label">SALE</span></a></li>
-										<li><a href="{% url "category" %}">Overcoat</a></li>
-										<li><a href="{% url "category" %}">Trench Coat</a></li>
+										<li><a href="{% url "app:category" %}">Bomber Jackets</a></li>
+										<li><a href="{% url "app:category" %}">Biker Jacket</a></li>
+										<li><a href="{% url "app:category" %}">Trucker Jacket</a></li>
+										<li><a href="{% url "app:category" %}">Denim Jackets</a></li>
+										<li><a href="{% url "app:category" %}">Blouson Jacket<span class="menu-label">SALE</span></a></li>
+										<li><a href="{% url "app:category" %}">Overcoat</a></li>
+										<li><a href="{% url "app:category" %}">Trench Coat</a></li>
 									</ul>
 								</li>
-								<li><a href="{% url "category" %}">Dresses<span class="menu-label menu-label--color3">SALE</span></a></li>
-								<li><a href="{% url "category" %}">Blouses & Tops</a></li>
-								<li><a href="{% url "category" %}">Cardigans & Pullovers</a></li>
-								<li><a href="{% url "category" %}">Skirts</a></li>
-								<li><a href="{% url "category" %}">Pants & Shorts</a></li>
-								<li><a href="{% url "category" %}">Outerwear</a></li>
-								<li><a href="{% url "category" %}">Swimwear</a></li>
+								<li><a href="{% url "app:category" %}">Dresses<span class="menu-label menu-label--color3">SALE</span></a></li>
+								<li><a href="{% url "app:category" %}">Blouses & Tops</a></li>
+								<li><a href="{% url "app:category" %}">Cardigans & Pullovers</a></li>
+								<li><a href="{% url "app:category" %}">Skirts</a></li>
+								<li><a href="{% url "app:category" %}">Pants & Shorts</a></li>
+								<li><a href="{% url "app:category" %}">Outerwear</a></li>
+								<li><a href="{% url "app:category" %}">Swimwear</a></li>
 							</ul>
 						</div>
 						<div class="mmenu-col">
-							<h3 class="submenu-title"><a href="{% url "category" %}">Accessories</a></h3>
+							<h3 class="submenu-title"><a href="{% url "app:category" %}">Accessories</a></h3>
 							<ul class="submenu-list">
-								<li><a href="{% url "category" %}">Jackets</a></li>
-								<li><a href="{% url "category" %}">Dresses</a></li>
-								<li><a href="{% url "category" %}">Blouses & Tops</a></li>
-								<li><a href="{% url "category" %}">Cardigans & Pullovers</a></li>
-								<li><a href="{% url "category" %}">Skirts<span class="menu-label">SALE</span></a></li>
-								<li><a href="{% url "category" %}">Pants & Shorts</a></li>
-								<li><a href="{% url "category" %}">Outerwear</a></li>
+								<li><a href="{% url "app:category" %}">Jackets</a></li>
+								<li><a href="{% url "app:category" %}">Dresses</a></li>
+								<li><a href="{% url "app:category" %}">Blouses & Tops</a></li>
+								<li><a href="{% url "app:category" %}">Cardigans & Pullovers</a></li>
+								<li><a href="{% url "app:category" %}">Skirts<span class="menu-label">SALE</span></a></li>
+								<li><a href="{% url "app:category" %}">Pants & Shorts</a></li>
+								<li><a href="{% url "app:category" %}">Outerwear</a></li>
 							</ul>
 						</div>
 						<div class="mmenu-col">
-							<h3 class="submenu-title"><a href="{% url "category" %}">Brands</a></h3>
+							<h3 class="submenu-title"><a href="{% url "app:category" %}">Brands</a></h3>
 							<ul class="submenu-list">
-								<li><a href="{% url "category" %}">Jackets</a></li>
-								<li><a href="{% url "category" %}">Dresses</a></li>
-								<li><a href="{% url "category" %}">Blouses & Tops</a></li>
-								<li><a href="{% url "category" %}">Cardigans & Pullovers</a></li>
-								<li><a href="{% url "category" %}">Skirts<span class="menu-label menu-label--color1">SALE</span></a></li>
-								<li><a href="{% url "category" %}">Pants & Shorts</a></li>
-								<li><a href="{% url "category" %}">Outerwear</a></li>
+								<li><a href="{% url "app:category" %}">Jackets</a></li>
+								<li><a href="{% url "app:category" %}">Dresses</a></li>
+								<li><a href="{% url "app:category" %}">Blouses & Tops</a></li>
+								<li><a href="{% url "app:category" %}">Cardigans & Pullovers</a></li>
+								<li><a href="{% url "app:category" %}">Skirts<span class="menu-label menu-label--color1">SALE</span></a></li>
+								<li><a href="{% url "app:category" %}">Pants & Shorts</a></li>
+								<li><a href="{% url "app:category" %}">Outerwear</a></li>
 							</ul>
 						</div>
 						<div class="mmenu-bottom justify-content-center">
@@ -270,7 +270,7 @@
 			</div>
 		</div>
 	</li>
-	<li class="mmenu-item--mega"><a href="{% url "category" %}">Women</a>
+	<li class="mmenu-item--mega"><a href="{% url "app:category" %}">Women</a>
 		<div class="mmenu-submenu mmenu-submenu--has-bottom">
 			<div class="mmenu-submenu-inside">
 				<div class="container">
@@ -278,98 +278,98 @@
 						<div class="mmenu-bnr-wrap">
 							<a href="#" class="image-hover-scale"><img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-srcset="/static/images/menu/mmenu-bnr-02.webp" class="lazyload fade-up" alt=""></a>
 						</div>
-						<h3 class="submenu-title"><a href="{% url "category" %}">Pre-Collection<br>Spring-Summer 2021</a></h3>
+						<h3 class="submenu-title"><a href="{% url "app:category" %}">Pre-Collection<br>Spring-Summer 2021</a></h3>
 					</div>
 					<div class="mmenu-cols column-4">
 						<div class="mmenu-col">
-							<h3 class="submenu-title"><a href="{% url "category" %}">Collections</a></h3>
+							<h3 class="submenu-title"><a href="{% url "app:category" %}">Collections</a></h3>
 							<ul class="submenu-list">
-								<li><a href="{% url "category" %}">Martins d'Art 2020/21<span class="submenu-link-txt">Available in boutiques from June 2019</span></a></li>
-								<li><a href="{% url "category" %}">Spring-Summer 2021<span class="submenu-link-txt">Available in boutiques from March 2019</span></a></li>
-								<li><a href="{% url "category" %}">Spring-Summer 2021 Pre-Collection<span class="submenu-link-txt">In boutiques</span></a></li>
-								<li><a href="{% url "category" %}">Cruise 2020/21<span class="submenu-link-txt">In boutiques</span></a></li>
-								<li><a href="{% url "category" %}">Fall-Winter 2020/21</a></li>
+								<li><a href="{% url "app:category" %}">Martins d'Art 2020/21<span class="submenu-link-txt">Available in boutiques from June 2019</span></a></li>
+								<li><a href="{% url "app:category" %}">Spring-Summer 2021<span class="submenu-link-txt">Available in boutiques from March 2019</span></a></li>
+								<li><a href="{% url "app:category" %}">Spring-Summer 2021 Pre-Collection<span class="submenu-link-txt">In boutiques</span></a></li>
+								<li><a href="{% url "app:category" %}">Cruise 2020/21<span class="submenu-link-txt">In boutiques</span></a></li>
+								<li><a href="{% url "app:category" %}">Fall-Winter 2020/21</a></li>
 							</ul>
 						</div>
 						<div class="mmenu-col">
-							<h3 class="submenu-title"><a href="{% url "category" %}">Ready-to-wear</a></h3>
+							<h3 class="submenu-title"><a href="{% url "app:category" %}">Ready-to-wear</a></h3>
 							<ul class="submenu-list">
-								<li><a href="{% url "category" %}">Jackets</a></li>
-								<li><a href="{% url "category" %}">Dresses<span class="menu-label menu-label--color3">SALE</span></a></li>
-								<li><a href="{% url "category" %}">Blouses & Tops</a>
+								<li><a href="{% url "app:category" %}">Jackets</a></li>
+								<li><a href="{% url "app:category" %}">Dresses<span class="menu-label menu-label--color3">SALE</span></a></li>
+								<li><a href="{% url "app:category" %}">Blouses & Tops</a>
 									<ul>
-										<li><a href="{% url "category" %}">Jackets</a></li>
-										<li><a href="{% url "category" %}">Dresses<span class="menu-label menu-label--color3">SALE</span></a></li>
-										<li><a href="{% url "category" %}">Blouses & Tops</a>
+										<li><a href="{% url "app:category" %}">Jackets</a></li>
+										<li><a href="{% url "app:category" %}">Dresses<span class="menu-label menu-label--color3">SALE</span></a></li>
+										<li><a href="{% url "app:category" %}">Blouses & Tops</a>
 											<ul>
-												<li><a href="{% url "category" %}">Jackets</a></li>
-												<li><a href="{% url "category" %}">Dresses<span class="menu-label menu-label--color3">SALE</span></a>
+												<li><a href="{% url "app:category" %}">Jackets</a></li>
+												<li><a href="{% url "app:category" %}">Dresses<span class="menu-label menu-label--color3">SALE</span></a>
 													<ul>
-														<li><a href="{% url "category" %}">Jackets</a></li>
-														<li><a href="{% url "category" %}">Dresses<span class="menu-label menu-label--color3">SALE</span></a>
+														<li><a href="{% url "app:category" %}">Jackets</a></li>
+														<li><a href="{% url "app:category" %}">Dresses<span class="menu-label menu-label--color3">SALE</span></a>
 															<ul>
-																<li><a href="{% url "category" %}">Jackets</a></li>
-																<li><a href="{% url "category" %}">Dresses<span class="menu-label menu-label--color3">SALE</span></a></li>
-																<li><a href="{% url "category" %}">Blouses & Tops</a></li>
-																<li><a href="{% url "category" %}">Cardigans & Pullovers</a></li>
-																<li><a href="{% url "category" %}">Skirts</a></li>
-																<li><a href="{% url "category" %}">Pants & Shorts</a></li>
-																<li><a href="{% url "category" %}">Outerwear</a></li>
-																<li><a href="{% url "category" %}">Swimwear</a></li>
+																<li><a href="{% url "app:category" %}">Jackets</a></li>
+																<li><a href="{% url "app:category" %}">Dresses<span class="menu-label menu-label--color3">SALE</span></a></li>
+																<li><a href="{% url "app:category" %}">Blouses & Tops</a></li>
+																<li><a href="{% url "app:category" %}">Cardigans & Pullovers</a></li>
+																<li><a href="{% url "app:category" %}">Skirts</a></li>
+																<li><a href="{% url "app:category" %}">Pants & Shorts</a></li>
+																<li><a href="{% url "app:category" %}">Outerwear</a></li>
+																<li><a href="{% url "app:category" %}">Swimwear</a></li>
 															</ul>
 														</li>
-														<li><a href="{% url "category" %}">Blouses & Tops</a></li>
-														<li><a href="{% url "category" %}">Cardigans & Pullovers</a></li>
-														<li><a href="{% url "category" %}">Skirts</a></li>
-														<li><a href="{% url "category" %}">Pants & Shorts</a></li>
-														<li><a href="{% url "category" %}">Outerwear</a></li>
-														<li><a href="{% url "category" %}">Swimwear</a></li>
+														<li><a href="{% url "app:category" %}">Blouses & Tops</a></li>
+														<li><a href="{% url "app:category" %}">Cardigans & Pullovers</a></li>
+														<li><a href="{% url "app:category" %}">Skirts</a></li>
+														<li><a href="{% url "app:category" %}">Pants & Shorts</a></li>
+														<li><a href="{% url "app:category" %}">Outerwear</a></li>
+														<li><a href="{% url "app:category" %}">Swimwear</a></li>
 													</ul>
 												</li>
-												<li><a href="{% url "category" %}">Blouses & Tops</a></li>
-												<li><a href="{% url "category" %}">Cardigans & Pullovers</a></li>
-												<li><a href="{% url "category" %}">Skirts</a></li>
-												<li><a href="{% url "category" %}">Pants & Shorts</a></li>
-												<li><a href="{% url "category" %}">Outerwear</a></li>
-												<li><a href="{% url "category" %}">Swimwear</a></li>
+												<li><a href="{% url "app:category" %}">Blouses & Tops</a></li>
+												<li><a href="{% url "app:category" %}">Cardigans & Pullovers</a></li>
+												<li><a href="{% url "app:category" %}">Skirts</a></li>
+												<li><a href="{% url "app:category" %}">Pants & Shorts</a></li>
+												<li><a href="{% url "app:category" %}">Outerwear</a></li>
+												<li><a href="{% url "app:category" %}">Swimwear</a></li>
 											</ul>
 										</li>
-										<li><a href="{% url "category" %}">Cardigans & Pullovers</a></li>
-										<li><a href="{% url "category" %}">Skirts</a></li>
-										<li><a href="{% url "category" %}">Pants & Shorts</a></li>
-										<li><a href="{% url "category" %}">Outerwear</a></li>
-										<li><a href="{% url "category" %}">Swimwear</a></li>
+										<li><a href="{% url "app:category" %}">Cardigans & Pullovers</a></li>
+										<li><a href="{% url "app:category" %}">Skirts</a></li>
+										<li><a href="{% url "app:category" %}">Pants & Shorts</a></li>
+										<li><a href="{% url "app:category" %}">Outerwear</a></li>
+										<li><a href="{% url "app:category" %}">Swimwear</a></li>
 									</ul>
 								</li>
-								<li><a href="{% url "category" %}">Cardigans & Pullovers</a></li>
-								<li><a href="{% url "category" %}">Skirts</a></li>
-								<li><a href="{% url "category" %}">Pants & Shorts</a></li>
-								<li><a href="{% url "category" %}">Outerwear</a></li>
-								<li><a href="{% url "category" %}">Swimwear</a></li>
+								<li><a href="{% url "app:category" %}">Cardigans & Pullovers</a></li>
+								<li><a href="{% url "app:category" %}">Skirts</a></li>
+								<li><a href="{% url "app:category" %}">Pants & Shorts</a></li>
+								<li><a href="{% url "app:category" %}">Outerwear</a></li>
+								<li><a href="{% url "app:category" %}">Swimwear</a></li>
 							</ul>
 						</div>
 						<div class="mmenu-col">
-							<h3 class="submenu-title"><a href="{% url "category" %}">Accessories</a></h3>
+							<h3 class="submenu-title"><a href="{% url "app:category" %}">Accessories</a></h3>
 							<ul class="submenu-list">
-								<li><a href="{% url "category" %}">Jackets</a></li>
-								<li><a href="{% url "category" %}">Dresses</a></li>
-								<li><a href="{% url "category" %}">Blouses & Tops</a></li>
-								<li><a href="{% url "category" %}">Cardigans & Pullovers</a></li>
-								<li><a href="{% url "category" %}">Skirts<span class="menu-label">SALE</span></a></li>
-								<li><a href="{% url "category" %}">Pants & Shorts</a></li>
-								<li><a href="{% url "category" %}">Outerwear</a></li>
+								<li><a href="{% url "app:category" %}">Jackets</a></li>
+								<li><a href="{% url "app:category" %}">Dresses</a></li>
+								<li><a href="{% url "app:category" %}">Blouses & Tops</a></li>
+								<li><a href="{% url "app:category" %}">Cardigans & Pullovers</a></li>
+								<li><a href="{% url "app:category" %}">Skirts<span class="menu-label">SALE</span></a></li>
+								<li><a href="{% url "app:category" %}">Pants & Shorts</a></li>
+								<li><a href="{% url "app:category" %}">Outerwear</a></li>
 							</ul>
 						</div>
 						<div class="mmenu-col">
-							<h3 class="submenu-title"><a href="{% url "category" %}">Brands</a></h3>
+							<h3 class="submenu-title"><a href="{% url "app:category" %}">Brands</a></h3>
 							<ul class="submenu-list">
-								<li><a href="{% url "category" %}">Jackets</a></li>
-								<li><a href="{% url "category" %}">Dresses</a></li>
-								<li><a href="{% url "category" %}">Blouses & Tops</a></li>
-								<li><a href="{% url "category" %}">Cardigans & Pullovers</a></li>
-								<li><a href="{% url "category" %}">Skirts<span class="menu-label menu-label--color1">SALE</span></a></li>
-								<li><a href="{% url "category" %}">Pants & Shorts</a></li>
-								<li><a href="{% url "category" %}">Outerwear</a></li>
+								<li><a href="{% url "app:category" %}">Jackets</a></li>
+								<li><a href="{% url "app:category" %}">Dresses</a></li>
+								<li><a href="{% url "app:category" %}">Blouses & Tops</a></li>
+								<li><a href="{% url "app:category" %}">Cardigans & Pullovers</a></li>
+								<li><a href="{% url "app:category" %}">Skirts<span class="menu-label menu-label--color1">SALE</span></a></li>
+								<li><a href="{% url "app:category" %}">Pants & Shorts</a></li>
+								<li><a href="{% url "app:category" %}">Outerwear</a></li>
 							</ul>
 						</div>
 						<div class="mmenu-bottom justify-content-center">
@@ -462,9 +462,9 @@
 					</li>
 					<li><a href="#">Pages<span class="arrow"><i class="icon-angle-right"></i></span></a>
 						<ul class="nav-level-2">
-							<li><a href="{% url "product" %}">Product page<span class="arrow"><i class="icon-angle-right"></i></span></a>
+							<li><a href="{% url "app:product" %}">Product page<span class="arrow"><i class="icon-angle-right"></i></span></a>
 								<ul class="nav-level-3">
-									<li><a href="{% url "product" %}">Product page variant 1<span class="menu-label menu-label--color3">Popular</span></a></li>
+									<li><a href="{% url "app:product" %}">Product page variant 1<span class="menu-label menu-label--color3">Popular</span></a></li>
 									<li><a href="product-2.html">Product page variant 2</a></li>
 									<li><a href="product-3.html">Product page variant 3</a></li>
 									<li><a href="product-4.html">Product page variant 4</a></li>
@@ -473,12 +473,12 @@
 									<li><a href="product-7.html">Product page variant 7</a></li>
 								</ul>
 							</li>
-							<li><a href="{% url "category" %}">Category page<span class="arrow"><i class="icon-angle-right"></i></span></a>
+							<li><a href="{% url "app:category" %}">Category page<span class="arrow"><i class="icon-angle-right"></i></span></a>
 								
 							</li>
-							<li><a href="{% url "cart" %}">Cart & Checkout<span class="arrow"><i class="icon-angle-right"></i></span></a>
+							<li><a href="{% url "app:cart" %}">Cart & Checkout<span class="arrow"><i class="icon-angle-right"></i></span></a>
 								<ul class="nav-level-3">
-									<li><a href="{% url "cart" %}">Cart Page</a></li>
+									<li><a href="{% url "app:cart" %}">Cart Page</a></li>
 									<li><a href="cart-empty.html">Empty cart</a></li>
 									<li><a href="checkout.html">Checkout variant 1</a></li>
 									<li><a href="checkout-2.html">Checkout variant 2</a></li>
@@ -514,58 +514,58 @@
 							<li><a href="coming-soon.html" target="_blank">Coming soon</a></li>
 						</ul>
 					</li>
-					<li><a href="{% url "category" %}">New Arrivals<span class="arrow"><i class="icon-angle-right"></i></span></a>
+					<li><a href="{% url "app:category" %}">New Arrivals<span class="arrow"><i class="icon-angle-right"></i></span></a>
 						<ul class="nav-level-2">
-							<li><a href="{% url "category" %}">Shoes<span class="arrow"><i class="icon-angle-right"></i></span></a>
+							<li><a href="{% url "app:category" %}">Shoes<span class="arrow"><i class="icon-angle-right"></i></span></a>
 								<ul class="nav-level-3">
-									<li><a href="{% url "category" %}">Heels</a></li>
-									<li><a href="{% url "category" %}">Boots</a></li>
-									<li><a href="{% url "category" %}">Flats</a></li>
-									<li><a href="{% url "category" %}">Sneakers &amp; Athletic</a></li>
-									<li><a href="{% url "category" %}">Clogs &amp; Mules</a></li>
+									<li><a href="{% url "app:category" %}">Heels</a></li>
+									<li><a href="{% url "app:category" %}">Boots</a></li>
+									<li><a href="{% url "app:category" %}">Flats</a></li>
+									<li><a href="{% url "app:category" %}">Sneakers &amp; Athletic</a></li>
+									<li><a href="{% url "app:category" %}">Clogs &amp; Mules</a></li>
 								</ul>
 							</li>
-							<li><a href="{% url "category" %}">Tops<span class="arrow"><i class="icon-angle-right"></i></span></a>
+							<li><a href="{% url "app:category" %}">Tops<span class="arrow"><i class="icon-angle-right"></i></span></a>
 								<ul class="nav-level-3">
-									<li><a href="{% url "category" %}">Dresses</a></li>
-									<li><a href="{% url "category" %}">Shirts &amp; Tops</a></li>
-									<li><a href="{% url "category" %}">Coats &amp; Outerwear</a></li>
-									<li><a href="{% url "category" %}">Sweaters</a></li>
+									<li><a href="{% url "app:category" %}">Dresses</a></li>
+									<li><a href="{% url "app:category" %}">Shirts &amp; Tops</a></li>
+									<li><a href="{% url "app:category" %}">Coats &amp; Outerwear</a></li>
+									<li><a href="{% url "app:category" %}">Sweaters</a></li>
 								</ul>
 							</li>
-							<li><a href="{% url "category" %}">Shoes<span class="arrow"><i class="icon-angle-right"></i></span></a>
+							<li><a href="{% url "app:category" %}">Shoes<span class="arrow"><i class="icon-angle-right"></i></span></a>
 								<ul class="nav-level-3">
-									<li><a href="{% url "category" %}">Heels</a></li>
-									<li><a href="{% url "category" %}">Boots</a></li>
-									<li><a href="{% url "category" %}">Flats</a></li>
-									<li><a href="{% url "category" %}">Sneakers &amp; Athletic</a></li>
-									<li><a href="{% url "category" %}">Clogs &amp; Mules</a></li>
+									<li><a href="{% url "app:category" %}">Heels</a></li>
+									<li><a href="{% url "app:category" %}">Boots</a></li>
+									<li><a href="{% url "app:category" %}">Flats</a></li>
+									<li><a href="{% url "app:category" %}">Sneakers &amp; Athletic</a></li>
+									<li><a href="{% url "app:category" %}">Clogs &amp; Mules</a></li>
 								</ul>
 							</li>
-							<li><a href="{% url "category" %}">Bottoms<span class="arrow"><i class="icon-angle-right"></i></span></a>
+							<li><a href="{% url "app:category" %}">Bottoms<span class="arrow"><i class="icon-angle-right"></i></span></a>
 								<ul class="nav-level-3">
-									<li><a href="{% url "category" %}">Jeans</a></li>
-									<li><a href="{% url "category" %}">Pants</a></li>
-									<li><a href="{% url "category" %}">slippers</a></li>
-									<li><a href="{% url "category" %}">suits</a></li>
-									<li><a href="{% url "category" %}">socks</a></li>
+									<li><a href="{% url "app:category" %}">Jeans</a></li>
+									<li><a href="{% url "app:category" %}">Pants</a></li>
+									<li><a href="{% url "app:category" %}">slippers</a></li>
+									<li><a href="{% url "app:category" %}">suits</a></li>
+									<li><a href="{% url "app:category" %}">socks</a></li>
 								</ul>
 							</li>
-							<li><a href="{% url "category" %}">Accessories<span class="arrow"><i class="icon-angle-right"></i></span></a>
+							<li><a href="{% url "app:category" %}">Accessories<span class="arrow"><i class="icon-angle-right"></i></span></a>
 								<ul class="nav-level-3">
-									<li><a href="{% url "category" %}">Sunglasses</a></li>
-									<li><a href="{% url "category" %}">Hats</a></li>
-									<li><a href="{% url "category" %}">Watches</a></li>
-									<li><a href="{% url "category" %}">Jewelry</a></li>
-									<li><a href="{% url "category" %}">Belts</a></li>
+									<li><a href="{% url "app:category" %}">Sunglasses</a></li>
+									<li><a href="{% url "app:category" %}">Hats</a></li>
+									<li><a href="{% url "app:category" %}">Watches</a></li>
+									<li><a href="{% url "app:category" %}">Jewelry</a></li>
+									<li><a href="{% url "app:category" %}">Belts</a></li>
 								</ul>
 							</li>
-							<li><a href="{% url "category" %}">Bags<span class="arrow"><i class="icon-angle-right"></i></span></a>
+							<li><a href="{% url "app:category" %}">Bags<span class="arrow"><i class="icon-angle-right"></i></span></a>
 								<ul class="nav-level-3">
-									<li><a href="{% url "category" %}">Handbags</a></li>
-									<li><a href="{% url "category" %}">Backpacks</a></li>
-									<li><a href="{% url "category" %}">Luggage</a></li>
-									<li><a href="{% url "category" %}">wallets</a></li>
+									<li><a href="{% url "app:category" %}">Handbags</a></li>
+									<li><a href="{% url "app:category" %}">Backpacks</a></li>
+									<li><a href="{% url "app:category" %}">Luggage</a></li>
+									<li><a href="{% url "app:category" %}">wallets</a></li>
 								</ul>
 							</li>
 						</ul>
@@ -637,7 +637,7 @@
 		<div class="minicart-drop-content js-dropdn-content-scroll">
 			<div class="minicart-prd row">
 				<div class="minicart-prd-image image-hover-scale-circle col">
-					<a href="{% url "product" %}"><img class="lazyload fade-up" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/static/images/skins/fashion/products/product-01-1.webp" alt=""></a>
+					<a href="{% url "app:product" %}"><img class="lazyload fade-up" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/static/images/skins/fashion/products/product-01-1.webp" alt=""></a>
 				</div>
 				<div class="minicart-prd-info col">
 					<div class="minicart-prd-tag">FOXic</div>
@@ -654,7 +654,7 @@
 			</div>
 			<div class="minicart-prd row">
 				<div class="minicart-prd-image image-hover-scale-circle col">
-					<a href="{% url "product" %}"><img class="lazyload fade-up" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/static/images/skins/fashion/products/product-16-1.webp" alt=""></a>
+					<a href="{% url "app:product" %}"><img class="lazyload fade-up" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/static/images/skins/fashion/products/product-16-1.webp" alt=""></a>
 				</div>
 				<div class="minicart-prd-info col">
 					<div class="minicart-prd-tag">FOXic</div>
@@ -703,7 +703,7 @@
 				<div class="minicart-drop-total-price col" data-header-cart-total="">$340</div>
 			</div>
 			<div class="minicart-drop-actions">
-				<a href="{% url "cart" %}" class="btn btn--md btn--grey"><i class="fa fa-shopping-basket"></i><span>Cart Page</span></a>
+				<a href="{% url "app:cart" %}" class="btn btn--md btn--grey"><i class="fa fa-shopping-basket"></i><span>Cart Page</span></a>
 				<a href="checkout.html" class="btn btn--md"><i class="fa fa-shopping-basket"></i><span>Check out</span></a>
 			</div>
 			<ul class="payment-link mb-2">
@@ -872,7 +872,7 @@
 						<div class="collapsed-content">
 							<ul>
 	<li><a href="account-details.html">My Account</a></li>
-	<li><a href="{% url "cart" %}">View Cart</a></li>
+	<li><a href="{% url "app:cart" %}">View Cart</a></li>
 	<li><a href="account-wishlist.html">My Wishlist</a></li>
 	<li><a href="account-history.html">Order Status</a></li>
 	<li><a href="account-history.html">Track My Order</a></li>
@@ -907,7 +907,7 @@
 <div class="footer-sticky">
 	<div class="payment-notification-wrap js-pn" data-visible-time="3000" data-hidden-time="3000" data-delay="500"
 		 data-from = "Aberdeen,Bakersfield,Birmingham,Cambridge,Youngstown"
-		 data-products = '[{"productname":"Leather Pegged Pants", "productlink":"{% url "product" %}","productimage":"/static/images/skins/fashion/products/product-01-1.webp"},{"productname":"Black Fabric Backpack", "productlink":"{% url "product" %}","productimage":"/static/images/skins/fashion/products/product-28-1.webp"},{"productname":"Combined Chunky Sneakers", "productlink":"{% url "product" %}","productimage":"/static/images/skins/fashion/products/product-23-1.webp"}]'>
+		 data-products = '[{"productname":"Leather Pegged Pants", "productlink":"{% url "app:product" %}","productimage":"/static/images/skins/fashion/products/product-01-1.webp"},{"productname":"Black Fabric Backpack", "productlink":"{% url "app:product" %}","productimage":"/static/images/skins/fashion/products/product-28-1.webp"},{"productname":"Combined Chunky Sneakers", "productlink":"{% url "app:product" %}","productimage":"/static/images/skins/fashion/products/product-23-1.webp"}]'>
 		<div class="payment-notification payment-notification--squared">
 			<div class="payment-notification-inside">
 				<div class="payment-notification-container">
@@ -917,7 +917,7 @@
 					<div class="payment-notification-content-wrapper">
 						<div class="payment-notification-content">
 							<div class="payment-notification-text">Someone purchased</div>
-							<a href="{% url "product" %}" class="payment-notification-name js-pn-name js-pn-link">Apple
+							<a href="{% url "app:product" %}" class="payment-notification-name js-pn-name js-pn-link">Apple
 								watch</a>
 							<div class="payment-notification-bottom">
 								<div class="payment-notification-when"><span class="js-pn-time">32</span> min ago</div>
